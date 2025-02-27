@@ -11,18 +11,23 @@ const Navbar = () => {
         <>
             <nav className=" w-[60%] h-[60px] ">
                 <ul className="text-white flex justify-between text-xl items-center h-[60px]">
-                    <li className="">Home</li>
+                    <li className="">
+                        <Link to="/"> Home </Link> 
+                    </li>
                     <li> 
                         <Link to="/about"> About </Link> 
                     </li>
                     <li>
-                        <Link to="/Blog"> Blog</Link>
+                        <Link to="/blog"> Blog</Link>
                     </li>
                     <li>
-                        <Link to="/Project"> Project</Link>
+                        <Link to="/projects"> Project</Link>
                     </li>
                     <li>
-                        <Link to="/Contact"> Contact </Link>
+                        <Link to="/certificates"> Certificates </Link>
+                    </li>
+                    <li>
+                        <Link to="/contact"> Contact </Link>
                     </li>
                 </ul>
             </nav>
