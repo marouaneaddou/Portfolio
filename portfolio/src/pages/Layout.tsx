@@ -8,7 +8,9 @@ const RootLayout = () => {
         <>
             <Header/>
             <ParticlesBackground/>
-            <Outlet/>
+            <main className="m-5">
+                <Outlet/>
+            </main>
         </>
     )
 }

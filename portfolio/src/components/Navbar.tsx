@@ -4,9 +4,6 @@ import { Link } from "react-router-dom"
 
 
 const Navbar = () => {
-
-    // const ctx = useContext(...)
-
     return (
         <>
             <nav className=" w-[60%] h-[60px] ">
