@@ -20,11 +20,11 @@ const HomePage = () => {
                         </div>
                         <div className="flex justify-between items-center w-[205px]">
                             <div className="bg-orange-yellow flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center">
-                                <CiSaveDown2 />
+                                {/* <CiSaveDown2 /> */}
                                 <button>Resume</button>
                             </div>
                             <div className="text-white flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center" >
-                                <MdOutlineEmail />
+                                {/* <MdOutlineEmail /> */}
                                 <button>Contact</button>
                             </div>
                         </div>
