@@ -19,6 +19,7 @@ const HomePage = () => {
                             <p className=" text-orange-yellow text-xl">Software Developer</p>
                         </div>
                         <div className="flex justify-between items-center w-[205px]">
+<<<<<<< HEAD
                             <a href="" className="bg-orange-yellow flex justify-between p-2 border w-26 h-10 border-white/10 rounded-md items-center">
                                 <Link to="" className="flex">
                                     <Download />
@@ -39,6 +40,16 @@ const HomePage = () => {
                                 <Mail />
                                 <button >Contact</button>
                             </div> */}
+=======
+                            <div className="bg-orange-yellow flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center">
+                                {/* <CiSaveDown2 /> */}
+                                <button>Resume</button>
+                            </div>
+                            <div className="text-white flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center" >
+                                {/* <MdOutlineEmail /> */}
+                                <button>Contact</button>
+                            </div>
+>>>>>>> e87adc73bbbdf936e78cbd664757e23c635d8d43
                         </div>
                     </div>
                 </div>
