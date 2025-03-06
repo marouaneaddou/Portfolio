@@ -1,5 +1,19 @@
-import { Link } from "react-router-dom"
+import { Home, User,  MessageSquare, BookOpen, FileCode, GraduationCap } from "lucide-react";
+import { NavLink } from "react-router-dom"
 
+interface item  {
+    path: string,
+    icon:  React.ElementType,
+    label: string,
+}
+const NavbarItems : item[] = [
+    { path: '/', icon: Home , label : "Home" },
+    { path: '/About', icon: User , label : "About" },
+    { path: '/Blog', icon: BookOpen , label : "Blog" },
+    { path: '/Projects', icon: FileCode , label : "Projects" },
+    { path: '/Certificates', icon: GraduationCap , label : "Certificates" },
+    { path: '/Contact', icon: MessageSquare , label : "Contact" },
+]
 
 
 
@@ -9,22 +23,22 @@ const Navbar = () => {
             <nav className=" w-[60%] h-[60px] ">
                 <ul className="text-white flex justify-between text-xl items-center h-[60px]">
                     <li className="">
-                        <Link to="/"> Home </Link> 
+                        <NavLink to="/"> Home </NavLink> 
                     </li>
                     <li> 
-                        <Link to="/about"> About </Link> 
+                        <NavLink to="/about"> About </NavLink> 
                     </li>
                     <li>
-                        <Link to="/blog"> Blog</Link>
+                        <NavLink to="/blog"> Blog</NavLink>
                     </li>
                     <li>
-                        <Link to="/projects"> Project</Link>
+                        <NavLink to="/projects"> Project</NavLink>
                     </li>
                     <li>
-                        <Link to="/certificates"> Certificates </Link>
+                        <NavLink to="/certificates"> Certificates </NavLink>
                     </li>
                     <li>
-                        <Link to="/contact"> Contact </Link>
+                        <NavLink to="/contact"> Contact </NavLink>
                     </li>
                 </ul>
             </nav>

@@ -1,8 +1,8 @@
 
+import { Download , Mail } from "lucide-react"
+import { Link } from "react-router-dom"
 import bg from "../assets/bg.avif"
 import profile from "../assets/profile.png"
-import { CiSaveDown2 } from "react-icons/ci"
-import { MdOutlineEmail } from "react-icons/md";
 
 const HomePage = () => {
     return (
@@ -19,14 +19,26 @@ const HomePage = () => {
                             <p className=" text-orange-yellow text-xl">Software Developer</p>
                         </div>
                         <div className="flex justify-between items-center w-[205px]">
-                            <div className="bg-orange-yellow flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center">
-                                <CiSaveDown2 />
+                            <a href="" className="bg-orange-yellow flex justify-between p-2 border w-26 h-10 border-white/10 rounded-md items-center">
+                                <Link to="" className="flex">
+                                    <Download />
+                                    <button>Resume</button>
+                                </Link>
+                            </a>
+                            <a href="" className="text-white flex justify-between p-2 border w-26 h-10 border-white/10 rounded-md items-center" >
+                                <Link to="/contact">
+                                    <Mail />
+                                    <button >Contact</button>
+                                </Link>
+                            </a>
+                            {/* <div className="bg-orange-yellow flex justify-between p-2 border w-26 h-10 border-white/10 rounded-md items-center">
+                                <Download />
                                 <button>Resume</button>
-                            </div>
-                            <div className="text-white flex justify-between p-2 border w-24 h-10 border-white/10 rounded-md items-center" >
-                                <MdOutlineEmail />
-                                <button>Contact</button>
-                            </div>
+                            </div> */}
+                            {/* <div className="text-white flex justify-between p-2 border w-26 h-10 border-white/10 rounded-md items-center" >
+                                <Mail />
+                                <button >Contact</button>
+                            </div> */}
                         </div>
                     </div>
                 </div>
