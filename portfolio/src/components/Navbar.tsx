@@ -1,11 +1,8 @@
 import { Home, User,  MessageSquare, BookOpen, FileCode, GraduationCap } from "lucide-react";
 import { NavLink } from "react-router-dom"
+import { item } from "../types"
+import "../styles/Navbar.css"
 
-interface item  {
-    path: string,
-    icon:  React.ElementType,
-    label: string,
-}
 const NavbarItems : item[] = [
     { path: '/', icon: Home , label : "Home" },
     { path: '/About', icon: User , label : "About" },
@@ -22,24 +19,14 @@ const Navbar = () => {
         <>
             <nav className=" w-[60%] h-[60px] ">
                 <ul className="text-white flex justify-between text-xl items-center h-[60px]">
-                    <li className="">
-                        <NavLink to="/"> Home </NavLink> 
+                {NavbarItems.map(({ path, icon:Icon, label }) => (
+                    <li key={path} className="flex items-center text-sm text-white/70 hover:text-white">
+                        <NavLink to={path} className="flex " >
+                            <Icon className="mr-1 w-5"/>
+                            <span>{label}</span>
+                        </NavLink>
                     </li>
-                    <li> 
-                        <NavLink to="/about"> About </NavLink> 
-                    </li>
-                    <li>
-                        <NavLink to="/blog"> Blog</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/projects"> Project</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/certificates"> Certificates </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact"> Contact </NavLink>
-                    </li>
+                    ))}
                 </ul>
             </nav>
         </>
