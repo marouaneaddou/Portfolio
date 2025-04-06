@@ -7,7 +7,7 @@ import ContactPage from "../pages/Contact"
 import CertificatetPage from "../pages/Certificate"
 import HomePage from "../pages"
 import Layout from "../pages/Layout"
-import Main from "../components/Main"
+// import Main from "../components/Main"
 
 
 const router = createBrowserRouter(
@@ -20,10 +20,10 @@ const router = createBrowserRouter(
                 }> 
                     <Route index element={ <HomePage/>} />
                     <Route path="about" element={ <AboutPage/> }/>
-                    <Route path="blog" element={ <Main> <BlogPage/> </Main>}/>
-                    <Route path="projects" element={ <Main> <ProjectPage/> </Main>}/>
-                    <Route path="certificates" element={ <Main> <CertificatetPage/> </Main>}/>
-                    <Route path="contact" element={ <Main> <ContactPage/> </Main>}/>
+                    <Route path="blog" element={ <BlogPage/>}/>
+                    <Route path="projects" element={  <ProjectPage/>}/>
+                    <Route path="certificates" element={  <CertificatetPage/>}/>
+                    <Route path="contact" element={  <ContactPage/>}/>
                 </Route>
             </>
     )
