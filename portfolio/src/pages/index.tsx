@@ -8,12 +8,51 @@ const HomePage = () => {
     return (
         <>
             <div className="container  mx-auto">
-                <div className="max-w-4xl bg-white bg-opacity-10 backdrop-blur-[10px] mx-auto border rounded-md border-white/10">
-                    <div className="">
-                        <img className="object-cover h-[12.75rem] w-full" src={bg} alt="" />
+                <div className=" max-w-4xl bg-white bg-opacity-10 backdrop-blur-[10px] mx-auto border rounded-md border-white/10 grid 
+                    gap-2 grid-cols-1 
+                    md:grid-cols-2 
+                    [grid-template-areas:'first''second''third''Fourth''Fifth''Sixth''Seventh''Eighth'] 
+                    md:[grid-template-areas:'first_first''second_third''Fourth_Fourth''Sixth_Seventh''Eighth_Eighth']">
+                    
+                    <div className="" style={{gridArea: 'first'}}>
+                        <img className="object-cover h-[12.75rem] w-full md:w-full" src={bg} alt="" />
                         <img className="w-36 ml-5 mt-[-4.5rem]" src={ profile } alt="" />
                     </div>
-                    <div className="m-5">
+                    <div className=" mr-5 ml-5" style={{ gridArea: 'second' }}>
+                        <h1 className="text-white font-bold text-xl mb-2">Marouane Addou</h1>
+                        <p className=" text-orange-yellow text-xl">Software Developer</p>
+                        <span className="flex justify-between text-white/70 w-[264px] mt-5 mb-6">
+                            <MapPin />
+                            Oujda, Oriental Region, Morocco
+                        </span>
+                    </div>
+                    <div className="flex mr-5 ml-5 md:justify-end" style={{ gridArea: 'third' }}>
+                            <Link to="" className="w-30 mr-2 h-10 bg-orange-yellow flex justify-between p-3 border w-26  border-white/10 rounded-md items-center">
+                                <Download className="w-4 mr-1"/>
+                                <span>Resume</span>
+                            </Link>
+                            <Link to="/contact" className="w-30 h-10  text-white flex justify-between p-3 border w-26  border-white/10 rounded-md items-center">
+                                <Mail className="w-4 mr-1"/>
+                                <span>Contact</span>
+                            </Link>
+                    </div>
+                    <div className="text-white/80 mb-5" style={{ gridArea: 'Fourth' }}>
+                        <div className="mr-5 ml-5 mb-5 text-lg">
+                            Dedicated computer science student with a strong foundation in software development and a 
+                            passion for learning. Experienced in working with JavaScript, React, and C++, 
+                            currently focused on building innovative solutions and enhancing problem-solving skills through hands-on projects
+                        </div>
+                        <span className="border border-white/10 w-full inline-block"></span>
+                    </div>
+                    <div className="">
+
+                    </div>
+                    
+                    {/* <div className="">
+                        <img className="object-cover h-[12.75rem] w-full" src={bg} alt="" />
+                        <img className="w-36 ml-5 mt-[-4.5rem]" src={ profile } alt="" />
+                    </div> */}
+                    {/* <div className="m-5">
                         <div className="flex justify-between">
                             <div>
                                 <h1 className="text-white font-bold text-xl mb-2">Marouane Addou</h1>
@@ -66,7 +105,7 @@ const HomePage = () => {
                                 <span> Email <span className="ml-2"> &gt; </span>  </span>
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

@@ -37,7 +37,7 @@ const AboutPage = () => {
                         md:grid-cols-2 
                         [grid-template-areas:'first''second''third']
                         md:[grid-template-areas:'first_first''second_third']">
-                                        <div className=" col-span-1 md:col-span-2" style={{ gridArea: 'first' }}>
+                                        <div className="" style={{ gridArea: 'first' }}>
                                             <h1 className="font-bold text-3xl mb-5 text-white">About Me</h1>
                                             <h2  className="font-bold text-xl mb-2 text-white">Who I Am</h2>
                                             <p className="text-white/70">
