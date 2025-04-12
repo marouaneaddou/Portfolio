@@ -10,8 +10,10 @@ export interface TechStack {
     category  : string,
     stack     : string[]
     icon      : React.ElementType
-    // "Frontend": string[];
-    // "Backend & Databases": string[];
-    // "Programming Languages": string[];
-    // "Tools & DevOps": string[];
+}
+
+export interface Education {
+    title : string,
+    institution : string,
+    date    : string
 }
