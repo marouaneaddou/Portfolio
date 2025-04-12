@@ -21,7 +21,7 @@ const HomePage = () => {
                     <div className=" mr-5 ml-5" style={{ gridArea: 'second' }}>
                         <h1 className="text-white font-bold text-xl mb-2">Marouane Addou</h1>
                         <p className=" text-orange-yellow text-xl">Software Developer</p>
-                        <span className="flex justify-between text-white/70 w-[264px] mt-5 mb-6">
+                        <span className="flex justify-between text-white/70 w-[264px] mt-5 md:mb-0 mb-4">
                             <MapPin />
                             Oujda, Oriental Region, Morocco
                         </span>
@@ -36,7 +36,7 @@ const HomePage = () => {
                                 <span>Contact</span>
                             </Link>
                     </div>
-                    <div className="text-white/80 mb-5 mt-5" style={{ gridArea: 'Fourth' }}>
+                    <div className="text-white/80 mt-4  mb-5 " style={{ gridArea: 'Fourth' }}>
                         <div className="mr-5 ml-5 mb-5 text-lg">
                             Dedicated computer science student with a strong foundation in software development and a 
                             passion for learning. Experienced in working with JavaScript, React, and C++, 
