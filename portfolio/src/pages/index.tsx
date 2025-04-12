@@ -11,8 +11,8 @@ const HomePage = () => {
                 <div className=" max-w-4xl bg-white bg-opacity-10 backdrop-blur-[10px] mx-auto border rounded-md border-white/10 grid 
                     gap-2 grid-cols-1 
                     md:grid-cols-2 
-                    [grid-template-areas:'first''second''third''Fourth''Fifth''Sixth''Seventh''Eighth'] 
-                    md:[grid-template-areas:'first_first''second_third''Fourth_Fourth''Sixth_Seventh''Eighth_Eighth']">
+                    [grid-template-areas:'first''second''third''Fourth''Fifth''Sixth''Seventh'] 
+                    md:[grid-template-areas:'first_first''second_third''Fourth_Fourth''Fifth_Sixth''Seventh_Seventh']">
                     
                     <div className="" style={{gridArea: 'first'}}>
                         <img className="object-cover h-[12.75rem] w-full md:w-full" src={bg} alt="" />
@@ -36,7 +36,7 @@ const HomePage = () => {
                                 <span>Contact</span>
                             </Link>
                     </div>
-                    <div className="text-white/80 mb-5" style={{ gridArea: 'Fourth' }}>
+                    <div className="text-white/80 mb-5 mt-5" style={{ gridArea: 'Fourth' }}>
                         <div className="mr-5 ml-5 mb-5 text-lg">
                             Dedicated computer science student with a strong foundation in software development and a 
                             passion for learning. Experienced in working with JavaScript, React, and C++, 
@@ -44,68 +44,40 @@ const HomePage = () => {
                         </div>
                         <span className="border border-white/10 w-full inline-block"></span>
                     </div>
-                    <div className="">
-
+                    <div className="mr-5 ml-5 p-6 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Fifth' }}>
+                        <Link to="/About" className="  ">
+                            <h1 className="text-white font-bold mb-2">About me</h1>
+                            <p className="text-white/70 mb-2">Learn more about my journey, skils, and experience.</p>
+                            <p className=" text-orange-yellow ">View Details &gt; </p>
+                        </Link>
                     </div>
-                    
-                    {/* <div className="">
-                        <img className="object-cover h-[12.75rem] w-full" src={bg} alt="" />
-                        <img className="w-36 ml-5 mt-[-4.5rem]" src={ profile } alt="" />
-                    </div> */}
-                    {/* <div className="m-5">
-                        <div className="flex justify-between">
-                            <div>
-                                <h1 className="text-white font-bold text-xl mb-2">Marouane Addou</h1>
-                                <p className=" text-orange-yellow text-xl">Software Developer</p>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                    <Link to="" className="w-28 mr-2 bg-orange-yellow flex justify-between p-3 border w-26  border-white/10 rounded-md items-center">
-                                        <Download className="w-4"/>
-                                        <span>Resume</span>
-                                    </Link>
-                                    <Link to="/contact" className="w-28 text-white flex justify-between p-3 border w-26  border-white/10 rounded-md items-center">
-                                        <Mail className="w-4"/>
-                                        <span>Contact</span>
-                                    </Link>
-                            </div>
+                    <div className=" p-6 ml-5 mr-5 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Sixth' }}>
+                        <Link to="/Blog" className="">
+                            <h1 className="text-white font-bold mb-2">Coding Challenge</h1>
+                            <p className="text-white/70 mb-2">Check out my solutions to varous programming problems</p>
+                            <p className=" text-orange-yellow ">View Details  &gt; </p>
+                        </Link>
+                    </div>
+                    <div className=" flex p-5 bg-white/5 mt-5 border-t border-white/10 " style={{gridArea: 'Seventh'}}>
+                        <div className="grid  grid-cols-1 gap-4
+                    md:grid-cols-3 
+                    [grid-template-areas:'first''second''third']
+                    md:[grid-template-areas:'first_second_third'] w-full
+                    ">
+                        <Link to="/" className="text-white  flex p-4 border border-white/10 bg-white/5 rounded-md " style={{ gridArea: 'first' }}>
+                            <Github className="mr-2"/>
+                            <span> Github <span className="ml-2"> &gt; </span> </span>
+                        </Link>
+                        <Link to="/" className="text-white flex  p-4 border border-white/10 bg-white/5 rounded-md" style={{ gridArea: 'second' }}>
+                            <Linkedin className="mr-2"/>
+                            <span> Linkedin<span className="ml-2"> &gt; </span> </span>
+                        </Link>
+                        <Link to="/" className="text-white flex  p-4 border border-white/10 bg-white/5 rounded-md" style={{ gridArea: 'third' }}>
+                            <Mail className="mr-2"/>
+                            <span> Email <span className="ml-2"> &gt; </span>  </span>
+                        </Link>
                         </div>
-                        <span className="flex justify-between text-white/70 w-[264px] mt-5 mb-6">
-                            <MapPin />
-                            Oujda, Oriental Region, Morocco
-                        </span>
-                        <span  className=" text-white/70">
-                            Dedicated computer science student with a strong foundation in software development and a 
-                            passion for learning. Experienced in working with JavaScript, React, and C++, 
-                            currently focused on building innovative solutions and enhancing problem-solving skills through hands-on projects
-                        </span>
-                        <div className="flex justify-between mt-5 mb-10 ">
-                            <Link to="/About" className="p-6  border border-white/10 rounded-md w-[415px] bg-white/5">
-                                <h1 className="text-white font-bold mb-2">About me</h1>
-                                <p className="text-white/70 mb-2">Learn more about my journey, skils, and experience.</p>
-                                <p className=" text-orange-yellow ">View Details &gt; </p>
-                            </Link>
-                            <Link to="/Blog" className="p-6  border border-white/10 rounded-md w-[415px] bg-white/5">
-                                <h1 className="text-white font-bold mb-2">Coding Challenge</h1>
-                                <p className="text-white/70 mb-2">Check out my solutions to varous programming problems</p>
-                                <p className=" text-orange-yellow ">View Details  &gt; </p>
-                            </Link>
-                        </div>
-                        <hr className="  w-full h-[1px] border-white/10 mb-10"/>
-                        <div className="flex justify-between w-[500px]">
-                            <Link to="/" className="text-white flex p-4 border border-white/10 bg-white/5 rounded-md">
-                                <Github className="mr-2"/>
-                                <span> Github <span className="ml-2"> &gt; </span> </span>
-                            </Link>
-                            <Link to="/" className="text-white flex p-4 border border-white/10 bg-white/5 rounded-md">
-                                <Linkedin className="mr-2"/>
-                                <span> Linkedin<span className="ml-2"> &gt; </span> </span>
-                            </Link>
-                            <Link to="/" className="text-white flex p-4 border border-white/10 bg-white/5 rounded-md">
-                                <Mail className="mr-2"/>
-                                <span> Email <span className="ml-2"> &gt; </span>  </span>
-                            </Link>
-                        </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>
