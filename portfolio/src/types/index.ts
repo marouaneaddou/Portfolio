@@ -17,3 +17,12 @@ export interface Education {
     institution : string,
     date    : string
 }
+
+export interface Problem {
+    id    : number,
+    title   :   string,
+    difficulty  :   'Easy' | 'Medium' | 'Hard',
+    description :   string,
+    leetCodeUrl: string,
+    githubSolutionUrl: string,
+}
