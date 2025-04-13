@@ -8,7 +8,7 @@ const projects : Project[] = [
       project: "Full Stack Application",
       description: "Developed a real-time multiplayer Pong game using Django, WebSockets, and Vanilla JavaScript. Managed server-side communication and game session handling with Redis. Created a REST API for game actions and implemented the game interface and logic on the client side.",
       technologies: ["Django", "WebSockets", "REST API", "Redis", "Vanilla JavaScript"],
-      githubUrl: "https://github.com/yourusername/multiplayer-pong-game"
+      githubUrl: ""
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const projects : Project[] = [
       project: "Backend Application",
       description: "Built a custom web server from scratch in C++98, handling GET, POST, and DELETE HTTP requests. Implemented non-blocking multiplexing and CGI for serving dynamic content. Managed error handling and HTTP parsing.",
       technologies: ["C++98", "HTTP", "Non-blocking Multiplexing", "CGI"],
-      githubUrl: "https://github.com/yourusername/webserver-cpp98"
+      githubUrl: ""
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const projects : Project[] = [
       project: "System Administration",
       description: "Created and managed Docker containers from scratch with Docker Compose orchestration. Configured networking, container communication, persistent storage, and streamlined deployment of a multi-service application.",
       technologies: ["Docker", "Docker Compose", "Networking", "Containerization"],
-      githubUrl: "https://github.com/yourusername/inception-docker"
+      githubUrl: ""
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ const projects : Project[] = [
       project: "System Programming",
       description: "Developed a shell program in C to mimic basic Bash functionality, including process creation, I/O redirection, piping, and signal handling. Focused on system calls, file descriptors, and robust error management.",
       technologies: ["C", "Unix/Linux", "System Calls", "File Descriptors", "Process Management"],
-      githubUrl: "https://github.com/yourusername/minishell"
+      githubUrl: ""
     }
   ];
   
