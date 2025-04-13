@@ -1,6 +1,5 @@
 import {Problem} from "../types"
 import { Code , Eye , Github} from 'lucide-react';
-import { Link } from "react-router-dom"
 
 const problems: Problem[] = [
     {
@@ -265,8 +264,11 @@ const BlogPage = () => {
         <>
             <div className="container  mx-auto">
                 <div className=" grid gap-4 grid-cols-1 max-w-2xl   mx-auto pb-6 ">
+                    <div className="text-white text-2xl font-bold">
+                        Coding Challenege
+                    </div>
                     {problems.map((problem) => (
-                        <div key={problem.id} className="border border-white/10 rounded-md bg-white/10 p-5 mb-0">
+                        <div key={problem.id} className="border border-white/10 rounded-md p-5 mb-0 bg-white bg-opacity-10 backdrop-blur-[10px]">
                             <span className="text-white mb-4 inline-block">
                                 <Code className="mr-2 inline"/> <span>{problem.title}</span>
                                 <span className={`ml-1 p-2 rounded-md ${getBgColor(problem.difficulty)}`}>{problem.difficulty}</span>

@@ -26,3 +26,12 @@ export interface Problem {
     leetCodeUrl: string,
     githubSolutionUrl: string,
 }
+
+export interface Project {
+    id    : number,
+    name   :   string,
+    project  :   string,
+    description :   string,
+    technologies: string[],
+    githubUrl: string,
+}
