@@ -333,6 +333,11 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
   integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
+"@hono/swagger-ui@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@hono/swagger-ui/-/swagger-ui-0.5.1.tgz#9ee8445712451d63505dbdd0eb22ec1cab412570"
+  integrity sha512-XpUCfszLJ9b1rtFdzqOSHfdg9pfBiC2J5piEjuSanYpDDTIwpMz0ciiv5N3WWUaQpz9fEgH8lttQqL41vIFuDA==
+
 "@hono/zod-openapi@^0.19.6":
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.6.tgz#28dc648aa8db21b6e56e0d70174af6209b2218cc"

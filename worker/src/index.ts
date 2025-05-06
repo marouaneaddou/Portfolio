@@ -3,6 +3,9 @@ import { createRoute, OpenAPIHono } from "@hono/zod-openapi"
 import { PrismaClient } from "@prisma/client/edge";
 import { withAccelerate } from "@prisma/extension-accelerate";
 
+import { html } from 'hono/html'
+import { swaggerUI } from '@hono/swagger-ui'
+
 export interface ENV {
 	DATABASE_URL: string;
   }
@@ -26,4 +29,19 @@ const route = createRoute({
 	  return c.json("test", 200)
   });
 
+  app.get(
+	'/ui',
+	swaggerUI({
+	  url: '/doc',
+	})
+  )
+
+
+  app.doc('/doc', {
+	info: {
+	  title: 'An API',
+	  version: 'v1',
+	},
+	openapi: '3.1.0',
+  })
 export default app
