@@ -1,0 +1,231 @@
+{
+    "site": {
+      "title": "m-addou - Software Developer",
+      "description": "Personal portfolio and blog of m-addou, a software engineer specializing in web development.",
+      "language": "en",
+      "url": "https://m-addou.dev",
+      "favicon": "/favicon.ico"
+    },
+    "theme": {
+      "colors": {
+        "primary": "#FFB95C",
+        "secondary": "#2563EB", 
+        "background": "#000000",
+        "text": "#FFFFFF",
+        "accent": "#F59E0B"
+      },
+      "fonts": {
+        "sans": "Inter, system-ui, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "spacing": {
+        "container": {
+          "padding": "1rem",
+          "maxWidth": "80rem"
+        },
+        "section": {
+          "padding": "4rem"
+        }
+      }
+    },
+    "animation": {
+      "enabled": true,
+      "duration": {
+        "fast": 200,
+        "normal": 300,
+        "slow": 500
+      },
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "personal": {
+      "name": "m-addou",
+      "title": "Software Developer",
+      "location": "Oujda, Oriental Region, Morocco",
+      "bio": "Dedicated computer science student with a strong foundation in software development and a passion for learning. Experienced in working with JavaScript, React, and C++, currently focused on building innovative solutions and enhancing problem-solving skills through hands-on projects.",
+      "email": "marouaneaddou@hotmail.com",
+      "resumeUrl": "/resume.pdf",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+      "coverImage": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1920&auto=format&fit=crop&q=80"
+    },
+    "social": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/marouaneaddou",
+        "icon": "Github",
+        "username": "marouaneaddou"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "www.linkedin.com/in/marouaneaddou",
+        "icon": "Linkedin",
+        "username": "marouaneaddou"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/m-badou",
+        "icon": "Twitter",
+        "username": "@m-badou"
+      },
+      {
+        "platform": "Email",
+        "url": "mailto:marouaneaddou@hotmail.com",
+        "icon": "Mail",
+        "username": "marouaneaddou@hotmail.com"
+      }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Project Management Application",
+            "slug": "",
+            "role": "Backend Developer",
+            "date": "",
+            "description": "At Escodeve, I developed the back-end of a project management application focused on improving team collaboration and productivity. The application included core features such as task assignment, team management, and tracking employees’ daily work. I implemented JWT-based authentication with role-based access control to ensure secure and flexible user access. The application was deployed on Cloudflare Workers to take advantage of high scalability, low latency, and optimized global performance.",
+            "longDescription": "",
+            "technologies": ["Node.js (Hono framework)", "TypeScript", "Zod", "Prisma ORM", "OpenAPI (Swagger)"],
+            "image": "",
+            "demoUrl": "",
+            "repoUrl": "",
+            "featured": true
+        },
+      {
+        "id": 2,
+        "title": "Multiplayer Pong Game Website",
+        "slug": "",
+        "role": "Full Stack Developer",
+        "date": "",
+        "description": "Developed a real-time multiplayer Pong game using Django, WebSockets, and Vanilla JavaScript. Managed server-side communication and game session handling with Redis. Created a REST API for game actions and implemented the game interface and logic on the client side.",
+        "longDescription": "",
+        "technologies": ["Django", "WebSockets", "PostgreSQL", "Redis", "Rest API" , "Vanilla JavaScript"],
+        "image": "",
+        "demoUrl": "",
+        "repoUrl": "https://github.com/marouaneaddou/Multiplayer-Game",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Web Server Project (C++98)",
+        "slug": "",
+        "role": "Backend Developer",
+        "date": "",
+        "description": "Built a custom web server from scratch in C++98, handling GET, POST, and DELETE HTTP requests. Implemented non-blocking multiplexing and CGI for serving dynamic content. Managed error handling and HTTP parsing.",
+        "longDescription":"",
+        "technologies": ["C++98", "HTTP", "Non-blocking Multiplexing", "Socket", "CGI"],
+        "image": "",
+        "demoUrl": "",
+        "repoUrl": "https://github.com/marouaneaddou/webserv_42",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "Inception Project (Docker Containers)",
+        "slug": "",
+        "role": "System Administration",
+        "date": "",
+        "description": "Created and managed Docker containers from scratch with Docker Compose orchestration. Configured networking, container communication, persistent storage, and streamlined deployment of a multi-service application.",
+        "longDescription":"",
+        "technologies": ["Docker", "Docker Compose", "Networking", "Containerization"],
+        "image": "",
+        "demoUrl": "",
+        "repoUrl": "",
+        "featured": true
+      },
+      {
+        "id": 5,
+        "title": "MiniShell Project",
+        "slug": "",
+        "role": "System Programming",
+        "date": "",
+        "description": "Developed a shell program in C to mimic basic Bash functionality, including process creation, I/O redirection, piping, and signal handling. Focused on system calls, file descriptors, and robust error management.",
+        "longDescription":"",
+        "technologies": ["C", "Unix/Linux", "System Calls", "File Descriptors", "Process Management"],
+        "image": "",
+        "demoUrl": "",
+        "repoUrl": "https://github.com/marouaneaddou/Minishell",
+        "featured": true
+      }
+    ],
+    "blogs": [
+      {
+        "id": 1,
+        "title": "",
+        "slug": "",
+        "excerpt": "",
+        "content": "",
+        "publishDate": "",
+        "readTime":"" ,
+        "category": "",
+        "tags": [],
+        "image": "",
+        "featured": true
+      }
+      
+    ],
+    
+    "skills": {
+      "frontend": ["React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
+      "backend": ["Django", "Django REST Framework", "PostgreSQL", "REST APIs"],
+      "languages": ["C", "C++", "Python", "JavaScript"],
+      "tools": ["Git", "Docker", "VS Code", "Linux", "Terminal"]
+    },
+    "experience": [
+      {
+        "jobTitle": "Senior Software Engineer",
+        "company": "Tech Corp",
+        "location": "San Francisco, CA",
+        "period": "2022 - Present",
+        "description": "Led development of scalable web applications using React and Node.js. Mentored junior developers and implemented best practices.",
+        "achievements": [
+          "Reduced application load time by 40% through performance optimization",
+          "Implemented CI/CD pipeline reducing deployment time by 60%",
+          "Led a team of 5 developers in rebuilding the core product interface",
+          "Introduced TypeScript reducing bugs by 25%"
+        ],
+        "technologies": ["React", "Node.js", "TypeScript", "AWS"]
+      },
+      {
+        "jobTitle": "Full Stack Developer",
+        "company": "Innovation Labs",
+        "location": "Remote",
+        "period": "2020 - 2022",
+        "description": "Developed and maintained multiple web applications for enterprise clients.",
+        "achievements": [
+          "Built a real-time analytics dashboard used by 50K+ users",
+          "Implemented OAuth 2.0 authentication system",
+          "Optimized database queries improving response time by 30%",
+          "Created reusable component library used across projects"
+        ],
+        "technologies": ["Python", "Django", "React", "PostgreSQL"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Computer Science",
+        "school": "Tech University",
+        "location": "San Francisco, CA",
+        "period": "2018 - 2020",
+        "description": "Focused on Software Engineering and Distributed Systems",
+        "achievements": [
+          "Published research paper on distributed systems",
+          "Led student developer community",
+          "Completed thesis on scalable microservices architecture"
+        ]
+      }
+    ],
+    "features": {
+      "darkMode": true,
+      "newsletter": true,
+      "comments": true,
+      "search": true
+    },
+    "metadata": {
+      "openGraph": {
+        "type": "website",
+        "image": "https://m-badou.dev/og-image.jpg"
+      },
+      "twitter": {
+        "handle": "@m-badou",
+        "cardType": "summary_large_image"
+      }
+    }
+  }

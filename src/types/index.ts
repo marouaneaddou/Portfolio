@@ -12,6 +12,12 @@ export interface TechStack {
     icon      : React.ElementType
 }
 
+export interface CategoriesProject {
+    name : string,
+    icon : React.ElementType,
+    color : string
+}
+
 export interface Education {
     title : string,
     institution : string,
