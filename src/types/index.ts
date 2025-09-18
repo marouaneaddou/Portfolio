@@ -38,6 +38,7 @@ export interface Project {
     title       :   string,
     slug        :   string,
     role        :   string,
+    type        :   string,
     date        :   string,
     category    :   string,
     description :   string,

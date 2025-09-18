@@ -15,7 +15,13 @@ const Card = ( { project } : CardProp )   => {
                 <img src={project.image} alt="" className="rounded-tr-[1rem] rounded-tl-[1rem] h-48 w-full z-10 object-cover"/>
                 <div className=" absolute top-4 w-full">
                     <Category name={project.category} />
-                 </div>
+                </div>
+                <div className=" absolute top-36 ml-[2px] text-[12px] bg-white/10  px-2 py-1 rounded left-2 text-white">
+                    {project.type}
+                </div>
+                <div className=" absolute top-36 right-4 ml-[2px] text-[12px] bg-orange-yellow px-2 py-1 rounded r text-black ">
+                    {project.role}
+                </div>
             </div>
             <div className=" p-6 rounded-br-[1rem] rounded-bl-[1rem]">
                 <h1 className="text-white font-bold pb-4 text-[20px] group-hover:text-orange-yellow "> {project.title}</h1>
@@ -31,7 +37,7 @@ const Card = ( { project } : CardProp )   => {
                         <a href={project.repoUrl} 
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" bg-white/10  text-white flex justify-between p-2 border   border-white/10 rounded-md items-center">
+                            className=" bg-white/10  text-white flex justify-between p-2 border   border-white/10 rounded-md items-center hover:bg-white/20">
                             <Github className=" ml-1"/>
                             <span>Code</span>
                         </a>
@@ -40,7 +46,7 @@ const Card = ( { project } : CardProp )   => {
                         <a 
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" flex items-center justify-between p-2 border text-[15px] border-white/10 rounded-md bg-orange-yellow text-black">
+                            className=" flex items-center justify-between p-2 border text-[15px] border-white/10 rounded-md  bg-white/10 text-white hover:bg-white/20">
                             <Eye className=" ml-1"/>
                             <span> Details</span>
                         </a>
@@ -50,7 +56,7 @@ const Card = ( { project } : CardProp )   => {
                         <a href={project.repoUrl} 
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" flex items-center justify-between p-2 border text-[15px] border-white/10 rounded-md bg-orange-yellow text-white">
+                            className=" flex items-center justify-between p-2 border text-[15px] border-white/10 rounded-md bg-orange-yellow  text-black">
                             <ExternalLink className=" ml-1"/>
                             <span>Demo </span>
                         </a>
