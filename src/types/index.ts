@@ -34,10 +34,21 @@ export interface Problem {
 }
 
 export interface Project {
-    id    : number,
-    name   :   string,
-    project  :   string,
+    id          :   number,
+    title       :   string,
+    slug        :   string,
+    role        :   string,
+    date        :   string,
+    category    :   string,
     description :   string,
-    technologies: string[],
-    githubUrl: string,
+    technologies:   string[],
+    image       :   string,
+    repoUrl     :   string,
+    demoUrl     :   string,
+    featured    :   boolean
 }
+
+// The application included core features such as task assignment, team management, and tracking employees’ daily work. I implemented JWT-based authentication with role-based access control to ensure secure and flexible user access. The application was deployed on Cloudflare Workers to take advantage of high scalability, low latency, and optimized global performance.",
+// Managed server-side communication and game session handling with Redis. Created a REST API for game actions and implemented the game interface and logic on the client side.",
+        // Implemented non-blocking multiplexing and CGI for serving dynamic content. Managed error handling and HTTP parsing.",
+        // Focused on system calls, file descriptors, and robust error management.",
