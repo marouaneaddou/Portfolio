@@ -3,12 +3,7 @@ import portfolioData            from '../config.json'
 import Card                     from "../components/Card";
 import { useState }             from "react";
 import Button                   from "../components/Button";
-import { Grid3X3 } from "lucide-react";
-
-
-const handleFilterProject = () => {
-
-}
+import {Code2  } from "lucide-react";
 
 const { projects } = portfolioData
 const ProjectPage = () => {
@@ -28,17 +23,18 @@ const ProjectPage = () => {
     return (
         <>
             <div className="max-w-[1100px] mx-auto">
-                <div className="flex bg-white/5 p-4 rounded-lg justify-between max-w-2xl mx-auto backdrop-blur-[10px]  border border-white/10 text-white/50">
+                <div className="mb-5 text-white">
+                        <h1 className="flex font-bold mb-4 text-3xl gap-3"> <Code2 className="w-8 h-8"/> Projects</h1>
+                        <p className="text-white/70 text-lg">A showcase of my development projects and technical achievements</p>
+                </div>
+                <div className="flex bg-white/5 p-4 rounded-lg justify-between max-w-2xl mx-auto backdrop-blur-[10px]  border border-white/10 text-white/50 mb-6">
                     <Button key={0} category={"All"} filterProject={filterProject} isActive={isActive=="All"}/>
                     { menuCategories.map( (val, idx) => (
                         <Button key={idx + 1} category={val} filterProject={filterProject} isActive={isActive==val}/>
                     ))}
                 </div>
                 <div className="">
-                    <div className="mb-5">
-                        <h1 className={`text-text text-xl font-bold mb-4`}>Projects</h1>
-                        <p className="text-white/70">A showcase of my development projects and technical achievements</p>
-                    </div>
+                    
                     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                         {items.map(( project : Project ) => (
                             <Card key={project.id} project={project} />

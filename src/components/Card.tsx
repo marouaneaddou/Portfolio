@@ -1,7 +1,9 @@
 
-import { ExternalLink, Eye, Github, View } from "lucide-react";
-import { CategoriesProject, Project } from "../types";
-import Category from "./Category";
+import { ExternalLink, 
+    Eye, 
+    Github }            from "lucide-react";
+import { Project }      from "../types";
+import Category         from "./Category";
 
 interface CardProp  {
     project : Project
@@ -52,7 +54,7 @@ const Card = ( { project } : CardProp )   => {
                         </a>
                     } 
                     {
-                        // project.demoUrl !== "" && 
+                        project.demoUrl !== "" && 
                         <a href={project.repoUrl} 
                             target="_blank"
                             rel="noopener noreferrer"
