@@ -10,7 +10,7 @@ interface CardProp  {
 
 const Card = ( { project } : CardProp )   => {
     return <>
-        <div key={project.id} className="group border rounded-[16px] backdrop-blur-sm bg-opacity-10 bg-white/5 hover:cursor-pointer">
+        <div className="group border border-white/10 rounded-[16px] backdrop-blur-sm bg-opacity-10 bg-white/5 hover:cursor-pointer hover:border-white/20">
             <div className="absulate">
                 <img src={project.image} alt="" className="rounded-tr-[1rem] rounded-tl-[1rem] h-48 w-full z-10 object-cover"/>
                 <div className=" absolute top-4 w-full">
@@ -52,7 +52,7 @@ const Card = ( { project } : CardProp )   => {
                         </a>
                     } 
                     {
-                        project.demoUrl !== "" && 
+                        // project.demoUrl !== "" && 
                         <a href={project.repoUrl} 
                             target="_blank"
                             rel="noopener noreferrer"
