@@ -76,7 +76,12 @@ const Details = ( props : detailsProject ) => {
                         </div>
                         <div>
                             <h1 className="text-white mb-4 font-bold">Detailed Description</h1>
-                            <p className="text-white/80">Hello world</p>
+                            <div className="text-white/80">
+                                { props.project.Detailed_Description.length > 0 && <p className="mb-2">{props.project.Detailed_Description[0]}</p> }
+                                {props.project.Detailed_Description.slice(1).map( ( val : string) => (
+                                    <li className="ml-5 list-none mb-2"> - {val}</li>
+                                ))}
+                            </div>
                         </div>
                         
                     </div>

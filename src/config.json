@@ -82,12 +82,24 @@
             "type"  : "Enterpris Application",
             "date": "",
             "category" : "Web",
-            "description": "At Escodeve, I developed the back-end of a project management application focused on improving team collaboration and productivity. ",
+            "description": "At Escodeve, developed the backend of a project management app to help the company organize projects and tasks, streamline team collaboration, and track daily developer progress.",
+            "Detailed_Description" : [
+              "Project management application with features to streamline company workflows:",
+              "Team organization and project structuring",
+              "Task creation, assignment, and progress tracking",
+              "Daily work logging by developers with task descriptions",
+              "RESTful API built with Node.js and Hono framework",
+              "Authentication using JWT for secure user login",
+              "Type-safe validation using TypeScript and Zod",
+              "PostgreSQL database managed via Prisma ORM",
+              "API documentation using OpenAPI (Swagger)"
+            ],
             "technologies": ["Node.js (Hono framework)", "TypeScript", "Zod", "Prisma ORM", "OpenAPI (Swagger)"],
             "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
             "demoUrl": "",
             "repoUrl": "",
-            "featured": true
+            "featured": true,
+            "teamProject" : true
         },
       {
         "id": 2,
@@ -97,13 +109,24 @@
         "type": "Full Stack Multiplayer Game",
         "date": "",
         "category" : "Web",
-        "description": "Developed a real-time multiplayer Pong game using Django, WebSockets, and Vanilla JavaScript.",
-        
+        "description": "Online Pong game supporting real-time multiplayer matches, dynamic player matchmaking, and consistent game state synchronization using WebSockets and Redis",
+        "Detailed_Description" : [
+          "Online multiplayer Pong game built for real-time, competitive gameplay:",
+          "Real-time communication between players using WebSockets",
+          "Server-side game logic developed with Python and Django",
+          "Dynamic matchmaking system to automatically pair available players",          
+          "Game state management using Redis for fast and consistent synchronization",          
+          "Smooth handling of player inputs and in-game events",         
+          "Client-side interface built with JavaScript to manage controls, rendering, and server communication",         
+          "Efficient session management to handle multiple active games concurrently"
+        ],
         "technologies": ["Django", "WebSockets", "PostgreSQL", "Redis", "Rest API" , "Vanilla JavaScript"],
         "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
         "demoUrl": "",
         "repoUrl": "https://github.com/marouaneaddou/Multiplayer-Game",
-        "featured": true
+        "featured": true,
+        "teamProject" : true
+
       },
       {
         "id": 3,
@@ -113,12 +136,22 @@
         "type": "System programming",
         "date": "",
         "category" : "System",
-        "description": "Built a custom web server from scratch in C++98, handling GET, POST, and DELETE HTTP requests.", 
+        "description": "Collaboratively built a lightweight HTTP web server in C++98, supporting core HTTP methods and efficient connection management through non-blocking sockets and low-level network programming.",
+        "Detailed_Description" : [
+          "Custom web server built from scratch with a team using C++98",
+          "Supports core HTTP methods: GET, POST, and DELETE",
+          "Non-blocking I/O using multiplexing for handling multiple connections efficiently",
+          "Manual socket programming to manage client-server communication",
+          "Custom parsing and handling of HTTP headers and request bodies",
+          "Designed to mimic behavior of lightweight web servers (NGINX)",
+          "Developed entirely with C++98 standard without external frameworks or libraries"
+        ], 
         "technologies": ["C++98", "HTTP", "Non-blocking Multiplexing", "Socket", "CGI"],
         "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
         "demoUrl": "",
         "repoUrl": "https://github.com/marouaneaddou/webserv_42",
-        "featured": true
+        "featured": true,
+        "teamProject" : true
       },
       {
         "id": 4,
@@ -128,12 +161,23 @@
         "type": "System Administration",
         "date": "",
         "category" : "DevOps",
-        "description": "Created and managed Docker containers from scratch with Docker Compose orchestration. Configured networking, container communication, persistent storage, and streamlined deployment of a multi-service application.",
+        "description": "Created and managed Docker containers and coordinated multi-service application deployment using Docker Compose, focusing on networking, persistent storage, and container communication.",
+        "Detailed_Description" : [
+          "Comprehensive containerization and management project involving",
+          "Building and configuring Docker containers from scratch",
+
+          "Using Docker Compose to manage multi-container applications",
+
+          "Setting up container networking to enable seamless communication between services",
+
+          "Using Docker volumes to ensure data remains intact across container restarts and updates"
+        ],
         "technologies": ["Docker", "Docker Compose", "Networking", "Containerization"],
         "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
         "demoUrl": "",
         "repoUrl": "",
-        "featured": true
+        "featured": true,
+        "teamProject" : false
       },
       {
         "id": 5,
@@ -143,12 +187,29 @@
         "role": "Backend Developer",
         "date": "",
         "category" : "System",
-        "description": "Developed a shell program in C to mimic basic Bash functionality, including process creation, I/O redirection, piping, and signal handling.",
+        "description": "Collaboratively developed a custom shell program in C that replicates essential Bash functionalities such as command execution, piping, I/O redirection, and signal handling on Unix/Linux systems.",
+        "Detailed_Description" : [
+          "A comprehensive shell implementation demonstrating deep understanding of operating system concepts:",
+          "Command parsing and execution",
+
+          "Process management and signal handling",
+
+          "Built-in commands support (cd, echo, pwd, export, unset, env, exit)",
+
+          "Pipe and I/O redirection support",
+
+          "Environment variable management",
+
+          "Robust error handling and memory management",
+
+          "Collaborative development focused on code quality and system stability"
+        ],
         "technologies": ["C", "Unix/Linux", "System Calls", "File Descriptors", "Process Management"],
         "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
         "demoUrl": "",
         "repoUrl": "https://github.com/marouaneaddou/Minishell",
-        "featured": true
+        "featured": true,
+        "teamProject" : true
       }
     ],
     "blogs": [

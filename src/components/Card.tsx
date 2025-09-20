@@ -1,10 +1,10 @@
 
 import { ExternalLink, 
     Eye, 
-    Github }            from "lucide-react";
+    Github, 
+    Users}            from "lucide-react";
 import { Project }      from "../types";
 import Category         from "./Category";
-import Details from "./Details";
 
 interface CardProp  {
     project : Project
@@ -17,6 +17,10 @@ const Card = ( props  : CardProp )   => {
         <div className="group border border-white/10 rounded-[16px] backdrop-blur-sm bg-opacity-10 bg-white/5 hover:cursor-pointer hover:border-white/20">
             <div className="absulate">
                 <img src={props.project.image} alt="" className="rounded-tr-[1rem] rounded-tl-[1rem] h-48 w-full z-10 object-cover"/>
+                <div className="absolute top-4 left-4  text-white grid grid-cols-2 gap-1 w-fit">
+                    { props.project.teamProject && <Users className="w-6 h-6 text-green-400 bg-green-400/10 border-green-400/20"/> } Team
+                    
+                </div>
                 <div className=" absolute top-4 w-full">
                     <Category name={props.project.category} />
                 </div>

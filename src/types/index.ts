@@ -42,11 +42,13 @@ export interface Project {
     date        :   string,
     category    :   string,
     description :   string,
+    Detailed_Description : string[],
     technologies:   string[],
     image       :   string,
     repoUrl     :   string,
     demoUrl     :   string,
-    featured    :   boolean
+    featured    :   boolean,
+    teamProject :   boolean
 }
 
 // The application included core features such as task assignment, team management, and tracking employees’ daily work. I implemented JWT-based authentication with role-based access control to ensure secure and flexible user access. The application was deployed on Cloudflare Workers to take advantage of high scalability, low latency, and optimized global performance.",
