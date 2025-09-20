@@ -26,7 +26,7 @@ const Category = ( name : { name : string} ) => {
     console.error(name)
     const Icon = generateCategoryComp(name.name)
     return <>
-        <div className={` border rounded-[25px] px-4 py-2  flex gap-1 right-4 absolute text-[12px] items-center ${getColor( name.name)}`}>
+        <div className={` border rounded-[25px] px-2 py-2  flex gap-1 right-4 absolute text-[12px] items-center ${getColor( name.name)}`}>
             {Icon}
             {name.name}
         </div>

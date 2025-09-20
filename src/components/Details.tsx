@@ -4,6 +4,7 @@ import { ExternalLink,
 import { Project }                  from "../types"
 import { generateCategoryComp }     from "./Category";
 import { getColor }                 from "../utils";
+import TeamProjectIndicator         from "./TeamProjectTag";
 
 interface detailsProject  {
     project : Project;
@@ -27,6 +28,10 @@ const Details = ( props : detailsProject ) => {
                         <div className=" ">
                             <h1 className="text-white mb-4 font-bold">Project Type</h1>
                             <p className="py-1 px-2 bg-white/10 mb-2 rounded text-sx text-white/80 w-fit">{props.project.type}</p>
+                        </div>
+                        <div>
+                            <h1 className="text-white mb-4 font-bold">Development</h1> 
+                            <p className="mb-4 w-fit"> <TeamProjectIndicator project={props.project} is_details={true}/></p>
                         </div>
                         <div className="mb-4">
                             <h1 className="text-white mb-4 font-bold">Categories</h1>
