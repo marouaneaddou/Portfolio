@@ -7,6 +7,7 @@ import {
     Wrench,
      }                from 'lucide-react';
 import { CategoriesProject } from '../types';
+import { getColor } from '../utils';
 
 const categories : CategoriesProject[] = [
     { name: 'All', icon: Grid3X3, color: 'text-white bg-white/10 border-white/20' },
@@ -15,20 +16,20 @@ const categories : CategoriesProject[] = [
     { name: 'DevOps', icon: Wrench, color: 'text-purple-400 bg-purple-400/10 border-purple-400/20' }
 ]
 
-const generateCategoryComp = ( name : string ) =>  {
+export const generateCategoryComp = ( name : string ) =>  {
     const category = categories.find(cat => cat.name === name);
     const Icon = category?.icon
-    return <>
-        <div className={` border rounded-[25px] px-4 py-2  flex gap-1 right-4 absolute text-[12px] items-center ${category?.color}`}>
-            {Icon && <Icon className="w-4"/> }
-            {name}
-        </div>
-    </>
+    return Icon && <Icon className="w-4"/> ;
 }
 
 const Category = ( name : { name : string} ) => {
+    console.error(name)
+    const Icon = generateCategoryComp(name.name)
     return <>
-        {generateCategoryComp(name.name)}
+        <div className={` border rounded-[25px] px-4 py-2  flex gap-1 right-4 absolute text-[12px] items-center ${getColor( name.name)}`}>
+            {Icon}
+            {name.name}
+        </div>
     </>
 }
 

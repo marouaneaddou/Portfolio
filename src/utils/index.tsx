@@ -11,9 +11,10 @@ export const getIcon = ( name : string) => {
 }
 
 export const getColor = (name : string ) => {
-    return categories.find( category => {
+    const color = categories.find( category => {
         if ( category.name === name ) return category.color;
     })
+    return  color?.color
 }
 
 export const categories : CategoriesProject[] = [
