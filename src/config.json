@@ -279,6 +279,19 @@
         ]
       }
     ],
+    "certificate" : [
+      {
+        "id": 1,
+        "title": "Problem Solving",
+        "issuer": "hackerrank",
+        "date": "14 Feb 2024",
+        "credentialId": "9ca38a429eff",
+        "description": "This certificate highlights my skills in solving algorithmic problems, showcasing my proficiency with essential problem-solving techniques, data structures, and logical thinking",
+        "skills": ["Problem Solving", "Data Structures", "Algorithms", "Logical Thinking"],
+        "image": "https://www.hackerrank.com/certificates/9ca38a429eff?w=800&auto=format&fit=crop&q=80",
+        "verifyLink": "https://www.hackerrank.com/certificates/iframe/9ca38a429eff"
+      }
+    ],
     "features": {
       "darkMode": true,
       "newsletter": true,
