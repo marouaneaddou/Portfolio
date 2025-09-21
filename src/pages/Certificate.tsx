@@ -16,7 +16,7 @@ const CertificatePage = () => {
                 <div className="max-w-4xl mx-auto ">
                     { certificate.map( ( certificate : Certificate, idx  : number) => (
                         <div key={idx} className=' md:flex border rounded-[15px] border-white/10 backdrop-blur-[10px] bg-white/10 '>
-                            <img className='w-96 rounded-tl-[15px] rounded-bl-[15px]' src={problem_solving} alt="" />
+                            <img className='w-[300px] rounded-tl-[15px] rounded-bl-[15px]' src={problem_solving} alt="" />
                             <div className='p-4'>
                                 <h1 className='text-white font-bold flex w-fit mb-4'>
                                     <Award  className='mr-6 w-8 h-8'/> 
