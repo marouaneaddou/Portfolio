@@ -1,22 +1,24 @@
 
-import { Award, Calendar, ExternalLink} from 'lucide-react';
-import portfolioData            from '../config.json'
-import { Certificate } from '../types';
-import problem_solving from "../assets/problem_solving_basic certificate.jpg"
+import { Award, 
+    Calendar, 
+    ExternalLink }              from "lucide-react";
+import portfolioData            from "../config.json"
+import { Certificate }          from "../types";
+import problem_solving          from "../assets/problem_solving_basic certificate.jpg"
+import JavaScript               from "../assets/JavaScript.Certification-1.jpg"
 
 const { certificate } = portfolioData;
-
-
-
 
 const CertificatePage = () => {
     return (
         <>
             <div className="container  mx-auto">
                 <div className="max-w-4xl mx-auto ">
-                    { certificate.map( ( certificate : Certificate, idx  : number) => (
-                        <div key={idx} className=' md:flex border rounded-[15px] border-white/10 backdrop-blur-[10px] bg-white/10 '>
-                            <img className='w-[300px] rounded-tl-[15px] rounded-bl-[15px]' src={problem_solving} alt="" />
+                    { certificate.map( ( certificate : Certificate, idx : number) => (
+                        <div key={idx} className='mb-6 md:flex border rounded-[15px] border-white/10 backdrop-blur-[10px] bg-white/10 '>
+                            {idx === 0 && <img className='w-[350px] rounded-tl-[15px] rounded-bl-[15px]' src={JavaScript} alt="" />}
+                            {idx === 1 && <img className='w-[350px] rounded-tl-[15px] rounded-bl-[15px]' src={problem_solving} alt="" />}
+                            
                             <div className='p-4'>
                                 <h1 className='text-white font-bold flex w-fit mb-4'>
                                     <Award  className='mr-6 w-8 h-8'/> 
@@ -55,7 +57,7 @@ const CertificatePage = () => {
                     ))}
                 </div>
             </div>
-         </>
+        </>
     )
 }
 

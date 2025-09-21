@@ -283,14 +283,26 @@
       {
         "id": 1,
         "title": "Problem Solving",
+        "issuer": "codingame",
+        "date": "21 SEP 2025",
+        "credentialId": "10459027",
+        "description": "This certificate demonstrates my ability to tackle coding challenges, reflecting my expertise in algorithms, logical thinking, and practical JavaScript implementation.",
+        "skills": ["JavaScript", "Problem Solving","Data Structures", "Algorithms", "Logical Thinking"],
+        "image": "JavaAcript",
+        "verifyLink": "https://www.codingame.com/certification/8p3X8fHblxtPdoaU8yghTw"
+      },
+      {
+        "id": 2,
+        "title": "Problem Solving",
         "issuer": "hackerrank",
         "date": "14 Feb 2024",
         "credentialId": "9ca38a429eff",
         "description": "This certificate highlights my skills in solving algorithmic problems, showcasing my proficiency with essential problem-solving techniques, data structures, and logical thinking",
-        "skills": ["Problem Solving", "Data Structures", "Algorithms", "Logical Thinking"],
-        "image": "https://www.hackerrank.com/certificates/9ca38a429eff?w=800&auto=format&fit=crop&q=80",
+        "skills": ["Problem Solving","C", "Data Structures", "Algorithms", "Logical Thinking"],
+        "image": "problem_solving",
         "verifyLink": "https://www.hackerrank.com/certificates/iframe/9ca38a429eff"
       }
+      
     ],
     "features": {
       "darkMode": true,
