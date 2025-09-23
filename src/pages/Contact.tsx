@@ -5,7 +5,7 @@ import { Mail,
     Send, 
     Phone} from 'lucide-react';
 import { useState } from "react"
-
+import emailjs from '@emailjs/browser';
 
 
 
@@ -22,6 +22,33 @@ const ContactPage = () => {
             [name] : value
         }))
     }
+    const handleSubmit = (e : React.FormEvent<HTMLFormElement>) => {
+
+        e.preventDefault();
+        const isEmpty = Object.values(formData).some((val) => val.trim() === "");
+        if (isEmpty) {
+            alert("Please fill in all fields before submitting.");
+        return;
+        }
+        emailjs
+          .send(
+            "",
+            "",
+            formData,
+            ""
+          )
+          .then(
+            (result) => {
+              console.log("Email sent successfully!", result.text);
+              alert("Message sent successfully!");
+            },
+            (error) => {
+              console.error("Error sending email:", error.text);
+              alert("Failed to send message. Try again.");
+            }
+          );
+        setdata({ name: "", email: "", message: "" });
+      };
     return (
         <>
             <div className="containermx-auto">
@@ -31,7 +58,7 @@ const ContactPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <p className=" text-white font-bold text-[25px] mb-4">Send a Message</p>
-                            <form action="">
+                            <form action="" onSubmit={handleSubmit}>
                                 <label className="text-white/80 block mb-2 text-[15px]" htmlFor=""> Name</label>
                                 <input className="text-white/90 py-3 px-4  focus:border bg-white/10 mb-4
                                     rounded-md focus:outline-none focus:border-orange-yellow w-full"
@@ -44,7 +71,7 @@ const ContactPage = () => {
                                 <label className="text-white/80 block mb-2 text-[15px]" htmlFor=""> Email</label>
                                 <input className="text-white/90 py-3 px-4  focus:border bg-white/10 
                                     rounded-md focus:outline-none focus:border-orange-yellow w-full mb-4" 
-                                    placeholder="your@gmail.com" 
+                                    placeholder="your@email.com" 
                                     type="email" 
                                     name="email"
                                     value={formData.email}
@@ -53,8 +80,10 @@ const ContactPage = () => {
                                  <label className="text-white/80 block mb-2 text-[15px]" htmlFor=""> Message</label>
                                 <textarea  className=" resize-y text-white/90 py-2 px-2  focus:border bg-white/10 
                                     rounded-md focus:outline-none focus:border-orange-yellow w-full mb-4 h-40" 
-                                    
-                                    placeholder="Write your message here..." ></textarea>
+                                    name='message'
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    placeholder="Write your message here..." />
                                 
                                 <button type="submit"
                                     className=" py-3 px-4  focus:border text-black 
