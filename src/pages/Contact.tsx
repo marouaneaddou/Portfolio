@@ -70,51 +70,61 @@ const ContactPage = () => {
                                 Feel free to reach out to me through any of these channels. I'll get back to you as soon as possible.
                             </p>
                             <div className='mb-8'>
-                                    <a href="marouaneaddou@hotmail.com" className=' flex gap-3 mb-3'>
+                                    <a href="mailto:marouaneaddou@hotmail.com" 
+                                    className=' flex gap-3 mb-3 group'>
                                         <span className=' p-3 bg-white/5 border
                                             border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
                                             >
-                                            <Mail className=' '/> 
+                                            <Mail className='group-hover:text-orange-yellow '/> 
                                         </span>
                                         
                                         <p > 
-                                            <span className=' text-white/90'>Email</span>  
+                                            <span className='group-hover:text-orange-yellow text-white/90'>Email</span>  
                                             <span className=' block text-white/50'>marouaneaddou@hotmail.com</span>
                                         </p>
                                     </a>
-                                    <a href="https://github.com/marouaneaddou" className=' flex gap-3 mb-3'>
-                                        <span className=' p-3 bg-white/5 border
+                                    <a href="https://github.com/marouaneaddou" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='group flex gap-3 mb-3'>
+                                        <span className=' p-3 bg-white/5 border 
                                             border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
                                             >
-                                            <Github className=' '/> 
+                                            <Github className=' group-hover:text-orange-yellow'/> 
                                         </span>
                                         
                                         <p > 
-                                            <span className=' text-white/90'>GitHub</span>  
+                                            <span className=' text-white/90 group-hover:text-orange-yellow'>GitHub</span>  
                                             <span className=' block text-white/50'>marouaneaddou</span>
                                         </p>
                                     </a>
-                                    <a href="www.linkedin.com/in/marouaneaddou" className=' flex gap-3 mb-3 '>
-                                        <span className=' p-3 bg-white/5 border
+                                    <a href="https://www.linkedin.com/in/marouaneaddou" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className=' flex gap-3 mb-3 group'>
+                                        <span className=' p-3 bg-white/5 border group-hover:text-orange-yellow
                                             border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
                                             >
-                                            <Linkedin className=' '/> 
+                                            <Linkedin className=' group-hover:text-orange-yellow'/> 
                                         </span>
                                         
                                         <p > 
-                                            <span className=' text-white/90'>LinkedIn</span>  
+                                            <span className=' text-white/90 group-hover:text-orange-yellow'>LinkedIn</span>  
                                             <span className=' block text-white/50'>marouaneaddou</span>
                                         </p>
                                     </a>
-                                    <a href="www.linkedin.com/in/marouaneaddou" className=' flex gap-3'>
+                                    <a 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className=' group flex gap-3'>
                                         <span className=' p-3 bg-white/5 border
                                             border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
                                             >
-                                            <Phone className=' '/> 
+                                            <Phone className='group-hover:text-orange-yellow '/> 
                                         </span>
                                         
                                         <p > 
-                                            <span className=' text-white/90'>Phone</span>  
+                                            <span className=' text-white/90 group-hover:text-orange-yellow'>Phone</span>  
                                             <span className=' block text-white/50'>0696782838</span>
                                         </p>
                                     </a>
