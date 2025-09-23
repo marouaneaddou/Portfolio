@@ -2,7 +2,8 @@
 import { Mail,
     Github, 
     Linkedin, 
-    Send } from 'lucide-react';
+    Send, 
+    Phone} from 'lucide-react';
 import { useState } from "react"
 
 
@@ -49,6 +50,7 @@ const ContactPage = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                 />
+                                 <label className="text-white/80 block mb-2 text-[15px]" htmlFor=""> Message</label>
                                 <textarea  className=" resize-y text-white/90 py-2 px-2  focus:border bg-white/10 
                                     rounded-md focus:outline-none focus:border-orange-yellow w-full mb-4 h-40" 
                                     
@@ -62,7 +64,63 @@ const ContactPage = () => {
                                 </button>
                             </form>
                         </div>
-                        
+                        <div className="text-white">
+                            <p className=" text-white font-bold text-[25px] mb-6">Contact Information</p>
+                            <p className=" text-white/80 mb-8">
+                                Feel free to reach out to me through any of these channels. I'll get back to you as soon as possible.
+                            </p>
+                            <div className='mb-8'>
+                                    <a href="marouaneaddou@hotmail.com" className=' flex gap-3 mb-3'>
+                                        <span className=' p-3 bg-white/5 border
+                                            border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
+                                            >
+                                            <Mail className=' '/> 
+                                        </span>
+                                        
+                                        <p > 
+                                            <span className=' text-white/90'>Email</span>  
+                                            <span className=' block text-white/50'>marouaneaddou@hotmail.com</span>
+                                        </p>
+                                    </a>
+                                    <a href="https://github.com/marouaneaddou" className=' flex gap-3 mb-3'>
+                                        <span className=' p-3 bg-white/5 border
+                                            border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
+                                            >
+                                            <Github className=' '/> 
+                                        </span>
+                                        
+                                        <p > 
+                                            <span className=' text-white/90'>GitHub</span>  
+                                            <span className=' block text-white/50'>marouaneaddou</span>
+                                        </p>
+                                    </a>
+                                    <a href="www.linkedin.com/in/marouaneaddou" className=' flex gap-3 mb-3 '>
+                                        <span className=' p-3 bg-white/5 border
+                                            border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
+                                            >
+                                            <Linkedin className=' '/> 
+                                        </span>
+                                        
+                                        <p > 
+                                            <span className=' text-white/90'>LinkedIn</span>  
+                                            <span className=' block text-white/50'>marouaneaddou</span>
+                                        </p>
+                                    </a>
+                                    <a href="www.linkedin.com/in/marouaneaddou" className=' flex gap-3'>
+                                        <span className=' p-3 bg-white/5 border
+                                            border-white/10 backdrop-blur[10px] w-fit h-fit rounded-md'
+                                            >
+                                            <Phone className=' '/> 
+                                        </span>
+                                        
+                                        <p > 
+                                            <span className=' text-white/90'>Phone</span>  
+                                            <span className=' block text-white/50'>0696782838</span>
+                                        </p>
+                                    </a>
+                            </div>
+                            <span className='h-[0.5px] bg-white/20 w-full block'></span>
+                        </div>
                     </div>
                 </div>
             </div>
