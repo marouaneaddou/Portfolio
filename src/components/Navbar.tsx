@@ -17,11 +17,12 @@ const NavbarItems : item[] = [
 const Navbar = () => {
     return (
         <>
-            <nav className=" w-[60%] h-[60px] ">
-                <ul className="text-white flex justify-between text-xl items-center h-[60px]">
+            <nav className="">
+                <ul className="text-white flex gap-2 justify-between text-xl items-center h-[60px]">
                 {NavbarItems.map(({ path, icon:Icon, label }) => (
-                    <li key={path} className="flex items-center text-sm text-white/70 hover:text-white">
-                        <NavLink to={path} className="flex " >
+                    <li key={path} className="flex items-center text-sm text-white/70 hover:text-white justify-center">
+                        <NavLink to={path} className="flex gap-1 text-[15px] py-2 px-4
+                         hover:bg-white/10 rounded-md" >
                             <Icon className="mr-1 w-5"/>
                             <span>{label}</span>
                         </NavLink>
