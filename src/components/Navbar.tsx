@@ -22,7 +22,7 @@ const Navbar = () => {
                 {NavbarItems.map(({ path, icon:Icon, label }) => (
                     <li key={path} className="flex items-center text-sm text-white/70 hover:text-white justify-center">
                         <NavLink to={path} className="flex gap-1 text-[15px] py-2 px-4
-                         hover:bg-white/10 rounded-md" >
+                         hover:bg-white/5 rounded-md" >
                             <Icon className="mr-1 w-5"/>
                             <span>{label}</span>
                         </NavLink>
