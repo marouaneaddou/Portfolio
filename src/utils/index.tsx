@@ -1,5 +1,6 @@
-import { Globe, 
+import { Cpu, Globe, 
     Grid3X3, 
+    PanelsTopLeft, 
     Server, 
     Wrench } from "lucide-react";
 import { CategoriesProject } from "../types";
@@ -16,6 +17,13 @@ export const getColor = (name : string ) => {
     })
     return  color?.color
 }
+
+export const iconStack = [
+    PanelsTopLeft,
+    Server,
+    Cpu,
+    Wrench
+]
 
 export const categories : CategoriesProject[] = [
     { name: 'All', icon: Grid3X3, color: 'text-white bg-white/10 border-white/20' },

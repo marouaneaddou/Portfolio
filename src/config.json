@@ -73,6 +73,12 @@
         "username": "marouaneaddou@hotmail.com"
       }
     ],
+    "techStack" : [
+      {"category": "Frontend","stack": ["React", "TypeScript","Tailwind CSS", "HTML5", "CSS3"],"icon":"PanelsTopLeft"},
+      {"category": "Backend & Databases", "stack":["Django", "Django REST Framework", "PostgreSQL", "REST APIs", "Node.js", "Express", "Hono", "Prisma ORM"], "icon":"Server"},
+      {"category": "Programming Languages", "stack":["C", "C++", "Python" ,"JavaScript"], "icon":"Cpu"},
+      {"category": "Tools & DevOps", "stack":["Git", "Docker", "VS Code", "Linux", "Terminal"], "icon":"Wrench"}
+    ],
     "projects": [
         {
             "id": 1,

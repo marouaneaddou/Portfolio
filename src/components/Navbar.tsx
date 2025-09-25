@@ -1,4 +1,12 @@
-import { Home, User,  MessageSquare, BookOpen, FileCode, GraduationCap } from "lucide-react";
+import { Home, 
+    User,  
+    MessageSquare, 
+    BookOpen, 
+    FileCode, 
+    GraduationCap,
+    Terminal
+} from "lucide-react";
+
 import { NavLink } from "react-router-dom"
 import { item } from "../types"
 import "../styles/Navbar.css"
@@ -6,6 +14,8 @@ import "../styles/Navbar.css"
 const NavbarItems : item[] = [
     { path: '/', icon: Home , label : "Home" },
     { path: '/About', icon: User , label : "About" },
+    { path: '/Education', icon: GraduationCap , label : "Education" },
+    { path: '/Skills', icon: Terminal , label : "Skills" },
     { path: '/Blog', icon: BookOpen , label : "Blog" },
     { path: '/Projects', icon: FileCode , label : "Projects" },
     { path: '/Certificates', icon: GraduationCap , label : "Certificates" },
