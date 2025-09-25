@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 const Header = () => {
     return (
         <header className=" w-full bg-[rgb(0_0_0_/_0.9)] border-b-2 border-white/10 top-0 left-0 sticky z-10">
-            <div className="max-w-6xl flex justify-between mx-auto items-center">
+            <div className="max-w-[1400px] flex justify-between mx-auto items-center">
                 <div className="flex text-white justify-center gap-2 group">
                     <div className="flex">
                         <span className="px-2 py-1 rounded-md text-black font-bold text-xl w-fit h-fit bg-gradient-to-r from-yellow-600 to-orange-600 group-hover:rotate-12 ">M</span>

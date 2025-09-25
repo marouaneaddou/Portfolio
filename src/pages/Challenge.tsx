@@ -15,14 +15,15 @@ const getBgColor = (difficulty:string) => {
 };
 
 
-const BlogPage = () => {
+const ChallengePage = () => {
     return (
         <>
             <div className="container  mx-auto">
-                <div className=" grid gap-4 grid-cols-1 max-w-2xl   mx-auto pb-6 ">
+                <div className=" grid gap-4 grid-cols-1 max-w-3xl   mx-auto pb-6 ">
                     <div className="text-white text-2xl font-bold">
                         Coding Challenege
                     </div>
+                    <p className="text-white/80">My solutions to various coding problems from LeetCode and other platforms</p>
                     {coding_challeng.map((problem) => (
                         <div key={problem.id} className="border border-white/10 rounded-md p-5 mb-0 bg-white bg-opacity-10 backdrop-blur-[10px]">
                             <span className="text-white mb-4 inline-block">
@@ -54,4 +55,4 @@ const BlogPage = () => {
     )
 }
 
-export default BlogPage
+export default ChallengePage
