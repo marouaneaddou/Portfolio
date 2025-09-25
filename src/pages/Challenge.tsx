@@ -1,4 +1,3 @@
-import {Problem} from "../types"
 import { Code , 
   Eye ,
   Github} from 'lucide-react';

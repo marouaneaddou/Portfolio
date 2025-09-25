@@ -560,6 +560,23 @@
         "githubSolutionUrl": "https://github.com/marouaneaddou/coding-challenge/tree/main/divide_Array_Into_Equal_Pairs"
       }
     ],
+    "achievements" : [
+      {
+        "id" : 1,
+        "name" : "50 Days Badge 2024",
+        "link" : "https://leetcode.com/medal/?showImg=0&id=3862636&isLevel=false"
+      },
+      {
+        "id" : 2,
+        "name" : "100 Days Badge 2024",
+        "link" : "https://leetcode.com/medal/?showImg=0&id=4272536&isLevel=false"
+      },
+      {
+        "id" : 3,
+        "name" : "200 Days Badge 2024",
+        "link" : "https://leetcode.com/medal/?showImg=0&id=5163275&isLevel=false"
+      }
+    ],
     "features": {
       "darkMode": true,
       "newsletter": true,
