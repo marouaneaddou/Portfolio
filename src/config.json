@@ -1,10 +1,10 @@
 {
     "site": {
       "title": "m-addou - Software Developer",
-      "description": "Personal portfolio and blog of m-addou, a software engineer specializing in web development.",
-      "language": "en",
-      "url": "https://m-addou.dev",
-      "favicon": "/favicon.ico"
+      "description": "Personal portfolio and blog of m-addou, a software developer specializing in web development.",
+      "language": "",
+      "url": "",
+      "favicon": ""
     },
     "theme": {
       "colors": {
@@ -29,20 +29,13 @@
       }
     },
     "animation": {
-      "enabled": true,
-      "duration": {
-        "fast": 200,
-        "normal": 300,
-        "slow": 500
-      },
-      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
     },
     "personal": {
-      "logo": "m-addou",
+      "login": "m-addou",
       "name": "Marouane Addou",
       "title": "Software Developer",
       "location": "Oujda, Oriental Region, Morocco",
-      "bio": "As a Software Developer, I work with C++, C, Python, and JavaScript to create practical solutions. I enjoy solving problems, tackling challenges, building projects, and continuously improving my skills through hands-on experience",
+      "bio": "I’m a software developer who works with C/C++, Python, and JavaScript to build useful and practical solutions. I enjoy solving problems, taking on new challenges, and improving my skills by building real projects",
       "email": "marouaneaddou@hotmail.com",
       "resumeUrl": "/resume.pdf",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
@@ -237,36 +230,24 @@
       "tools": ["Git", "Docker", "VS Code", "Linux", "Terminal"]
     },
     "experience": [
-
       {
-        "id" : 1,
-        "jobTitle": "Backend developer",
+        "id": 1,
+        "jobTitle": "Backend Developer Intern",
         "company": "Escodeve",
         "location": "",
         "period": "2025",
-        "description": "Developed and maintained multiple web applications for enterprise clients.",
+        "description": "Developed backend services with a focus on secure authentication, structured data management, and well-documented APIs",
         "achievements": [
-          "Built a real-time analytics dashboard used by 50K+ users",
-          "Implemented OAuth 2.0 authentication system",
-          "Optimized database queries improving response time by 30%",
-          "Created reusable component library used across projects"
+          "Built RESTful APIs using Node.js and the Hono framework",
+          "Implemented secure user authentication with JWT",
+          "Used TypeScript and Zod for type-safe validation",
+          "Managed PostgreSQL database via Prisma ORM",
+          "Created API documentation with OpenAPI (Swagger)"
         ],
-        "technologies": ["Python", "Django", "React", "PostgreSQL"]
+        "technologies": ["Node.js", "Hono", "TypeScript", "Zod", "PostgreSQL", "Prisma", "OpenAPI"]
       }
     ],
     "education": [
-      {
-        "degree": "Master of Computer Science",
-        "school": "Tech University",
-        "location": "San Francisco, CA",
-        "period": "2018 - 2020",
-        "description": "Focused on Software Engineering and Distributed Systems",
-        "achievements": [
-          "Published research paper on distributed systems",
-          "Led student developer community",
-          "Completed thesis on scalable microservices architecture"
-        ]
-      }
     ],
     "certificate" : [
       {
@@ -567,13 +548,5 @@
       "search": true
     },
     "metadata": {
-      "openGraph": {
-        "type": "website",
-        "image": "https://m-badou.dev/og-image.jpg"
-      },
-      "twitter": {
-        "handle": "@m-badou",
-        "cardType": "summary_large_image"
-      }
     }
   }

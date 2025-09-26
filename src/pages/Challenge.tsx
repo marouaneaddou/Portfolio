@@ -1,7 +1,7 @@
 import { Code , 
   Eye ,
   Github} from 'lucide-react';
-  import portfolioData            from "../config.json"
+import portfolioData            from "../config.json"
 
 const { coding_challeng } = portfolioData;
 

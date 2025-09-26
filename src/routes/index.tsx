@@ -10,6 +10,7 @@ import Layout from "../pages/Layout"
 import EducationPage from "../pages/Education"
 import SkillsPage from "../pages/Skills"
 import ChallengePage from "../pages/Challenge"
+import ExperincePage from "../pages/Experience"
 // import Main from "../components/Main"
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
                     <Route index element={ <HomePage/>} />
                     <Route path="about" element={ <AboutPage/> }/>
                     <Route path="education" element={ <EducationPage/>}/>
+                    <Route path="experince" element={ <ExperincePage/>}/>
                     <Route path="skills" element={ <SkillsPage/>}/>
                     {/* <Route path="blog" element={ <BlogPage/>}/> */}
                     <Route path="projects" element={  <ProjectPage/>}/>

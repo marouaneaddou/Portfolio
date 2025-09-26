@@ -33,6 +33,17 @@ export interface Problem {
     githubSolutionUrl: string,
 }
 
+export interface Experience {
+    id: number,
+    jobTitle: string,
+    company: string,
+    location: string,
+    period: number,
+    description:string,
+    achievements: string[],
+    technologies: string[]
+  
+}
 export interface Project {
     id          :   number,
     title       :   string,

@@ -54,25 +54,24 @@ const HomePage = () => {
                         </div>
                         <span className="border border-white/10 w-full inline-block"></span>
                     </div>
-                    <div className="mb-5 mr-5 ml-5 p-6 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Fifth' }}>
+                    <div className="mb-5 mr-2 ml-5 p-6 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Fifth' }}>
                         <Link to="/About" className="  ">
                             <h1 className="text-white font-bold mb-2">About me</h1>
                             <p className="text-white/70 mb-2">Learn more about my journey, skils, and experience.</p>
                             <p className=" text-orange-yellow ">View Details &gt; </p>
                         </Link>
                     </div>
-                    <div className="mb-5 p-6 ml-5 mr-5 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Sixth' }}>
-                        <Link to="/Blog" className="">
+                    <div className="mb-5 p-6 ml-2 mr-5 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Sixth' }}>
+                        <Link to="/Challenges" className="">
                             <h1 className="text-white font-bold mb-2">Coding Challenge</h1>
                             <p className="text-white/70 mb-2">Check out my solutions to varous programming problems</p>
                             <p className=" text-orange-yellow ">View Details  &gt; </p>
                         </Link>
                     </div>
-                    <div className="pt-6 border-t-2 border-white/10" style={{gridArea: 'Seventh'}}>
-                        <div className="grid md:grid-cols-[2fr_1fr]  grid-cols-1
-                        [grid-template-areas:'first''second'] mr-5
-                        md:[grid-template-areas:'first_second'] w-full">
-                            <div className=" ml-5 mr-2 border border-white/10 bg-white/5 rounded-md p-6" style={{gridArea : 'first'}}>
+                    <div className="pt-6 border-t-2 border-white/10 mr-5 ml-5 grid grid-cols-1 md:grid-cols-3 gap-6" style={{gridArea: 'Seventh'}}>
+                        {/* <div className="grid md:grid-cols-2 ml-5 mr-5 w-full"
+                        > */}
+                            <div className=" col-span-2 border border-white/10 bg-white/5 rounded-md p-6 ">
                                 <h1 className="text-white font-bold flex gap-2 mb-6" >
                                     <Trophy className="w-6 h-6"/>
                                     Competitive Programming
@@ -96,20 +95,20 @@ const HomePage = () => {
                                     </a>
                                    
                                 </div>
-                                <p className="flex justify-between flex-wrap text-white/70 mb-4">
+                                <p className="flex justify-between text-white/70 mb-4 ">
                                     Total Solved
                                     <span className="text-orange-yellow"> 300+</span>
                                 </p>
-                                <div className="flex justify-between gap-2 mb-4">
-                                    <span className="bg-green-400/10 py-1 px-16 rounded-md text-white/70"> 
+                                <div className="flex flex-wrap justify-between mb-4 ">
+                                    <span className="bg-green-400/10 text-center py-3 rounded-md text-white/70 w-[155px]"> 
                                         <span className=" block text-green-400">130+</span>
                                         easy
                                     </span>
-                                    <span className=" bg-yellow-400/10  py-1 px-16 rounded-md text-white/70"> 
+                                    <span className=" bg-yellow-400/10 text-center  py-3 rounded-md text-white/70 w-[155px]"> 
                                         <span className=" block text-green-400">150+</span>
                                         Medium
                                     </span>
-                                    <span className="bg-red-500/10 py-1 px-16 rounded-md text-white/70"> 
+                                    <span className="bg-red-500/10  text-center  py-3 rounded-md text-white/70 w-[155px]"> 
                                         <span className=" block text-red-400 ">20+</span>
                                         Hard
                                     </span>
@@ -119,12 +118,12 @@ const HomePage = () => {
                                     <span className="text-orange-yellow"> #308,674</span>
                                 </p>
                             </div>
-                            <div className=" ml-5 mr-2 border border-white/10 bg-white/5 rounded-md p-6  h-fit">
+                            <div className=" col-span-1 border border-white/10 bg-white/5 rounded-md p-6 ">
                                 <h1 className="text-white font-bold flex gap-2 mb-6" >
                                     <Award className="w-6 h-6"/>
                                     Recent Achievements
                                 </h1>
-                                <div className=" flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-2">
                                     { achievements.map( ( arch : achievement, idx : number) => (
                                                 <p key={idx}  className="px-3 py-2 bg-orange-500/10 border border-orange-500/20 w-full
                                                 rounded-full text-orange-400 text-sm flex gap-4 justify-between hover:text-white/70">
@@ -136,7 +135,7 @@ const HomePage = () => {
                                     ))}
                                 </div>
                             </div>
-                        </div>
+                        {/* </div> */}
                     </div>
                     <div className=" flex p-5 bg-white/5 mt-5 border-t border-white/10 " style={{gridArea: 'eighth'}}>
                         <div className="grid  grid-cols-1 gap-4

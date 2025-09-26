@@ -15,6 +15,7 @@ const NavbarItems : item[] = [
     { path: '/', icon: Home , label : "Home" },
     { path: '/About', icon: User , label : "About" },
     { path: '/Education', icon: GraduationCap , label : "Education" },
+    { path: '/Experince', icon: BookOpen , label : "Experince" },
     { path: '/Skills', icon: Terminal , label : "Skills" },
     // { path: '/Blog', icon: BookOpen , label : "Blog" },
     { path: '/Challenges', icon: FileCode , label : "Challenges" },

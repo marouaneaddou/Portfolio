@@ -1,6 +1,7 @@
 import Navbar from "./Navbar"
+import portfolioData from "../config.json"
 
-
+const {personal} = portfolioData;
 const Header = () => {
     return (
         <header className=" w-full bg-[rgb(0_0_0_/_0.9)] border-b-2 border-white/10 top-0 left-0 sticky z-10">
@@ -12,7 +13,7 @@ const Header = () => {
                              bottom-[-24px] border border-white/5 backdrop-blur-[10px] rounded p-1"> &lt;/&gt; </span>
                     </div>
                     <div className=" items-center h-fit ">
-                        <p className=" h-fit font-bold leading-none text-lg group-hover:text-orange-yellow">m-addou</p>
+                        <p className=" h-fit font-bold leading-none text-lg group-hover:text-orange-yellow">{personal.login}</p>
                         <span className="text-white/80 text-xs">Developer</span>
                     </div>
                 </div>
