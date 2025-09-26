@@ -21,7 +21,7 @@ const SkillsPage = () => {
                             <div key={category} className=" p-6 bg-white/5 backdrop-blur-[10px] border border-white/10 rounded-[20px]">
                                 <div className=" text-white items-center flex gap-2 mb-5">
                                     <span className="bg-white/6 border border-white/5 backdrop-blur-[10px] rounded w-fit h-fit inline-block p-2">
-                                        {<Icon className=" "/>}
+                                        <Icon className=" "/>
                                     </span>
                                     <p className="font-bold text-[20px]"> {category}</p>
                                 </div>

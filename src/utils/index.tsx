@@ -1,10 +1,11 @@
-import { Cpu, Globe, 
+import { Cpu, Github, Globe, 
     Grid3X3, 
+    Linkedin, 
+    Mail, 
     PanelsTopLeft, 
-    Server, 
+    Server,
     Wrench } from "lucide-react";
 import { CategoriesProject } from "../types";
-
 export const getIcon = ( name : string) => {
     const category = categories.find( category => category.name === name );
     const Icon = category?.icon;
@@ -25,6 +26,11 @@ export const iconStack = [
     Wrench
 ]
 
+export const platformSocialicons  = [
+    Github,
+    Linkedin,
+    Mail
+]
 export const categories : CategoriesProject[] = [
     { name: 'All', icon: Grid3X3, color: 'text-white bg-white/10 border-white/20' },
     { name: 'Web', icon: Globe, color: 'text-blue-400 bg-blue-400/10 border-blue-400/20' },

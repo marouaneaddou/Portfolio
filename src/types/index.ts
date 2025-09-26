@@ -62,6 +62,12 @@ export interface Certificate {
     image         : string,
     verifyLink    : string, 
 }
+export interface so {
+    platform  : string,
+    url       : string,
+    icon      : React.ElementType,
+    username  : string,
+}
 export interface achievement {
     id : number,
     name : string,

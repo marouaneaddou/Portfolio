@@ -38,10 +38,11 @@
       "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
     },
     "personal": {
-      "name": "m-addou",
+      "logo": "m-addou",
+      "name": "Marouane Addou",
       "title": "Software Developer",
       "location": "Oujda, Oriental Region, Morocco",
-      "bio": "Dedicated computer science student with a strong foundation in software development and a passion for learning. Experienced in working with JavaScript, React, and C++, currently focused on building innovative solutions and enhancing problem-solving skills through hands-on projects.",
+      "bio": "As a Software Developer, I work with C++, C, Python, and JavaScript to create practical solutions. I enjoy solving problems, tackling challenges, building projects, and continuously improving my skills through hands-on experience",
       "email": "marouaneaddou@hotmail.com",
       "resumeUrl": "/resume.pdf",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
@@ -56,15 +57,9 @@
       },
       {
         "platform": "LinkedIn",
-        "url": "www.linkedin.com/in/marouaneaddou",
+        "url": "https://www.linkedin.com/in/marouaneaddou/",
         "icon": "Linkedin",
         "username": "marouaneaddou"
-      },
-      {
-        "platform": "Twitter",
-        "url": "https://twitter.com/m-badou",
-        "icon": "Twitter",
-        "username": "@m-badou"
       },
       {
         "platform": "Email",
@@ -242,25 +237,13 @@
       "tools": ["Git", "Docker", "VS Code", "Linux", "Terminal"]
     },
     "experience": [
+
       {
-        "jobTitle": "Senior Software Engineer",
-        "company": "Tech Corp",
-        "location": "San Francisco, CA",
-        "period": "2022 - Present",
-        "description": "Led development of scalable web applications using React and Node.js. Mentored junior developers and implemented best practices.",
-        "achievements": [
-          "Reduced application load time by 40% through performance optimization",
-          "Implemented CI/CD pipeline reducing deployment time by 60%",
-          "Led a team of 5 developers in rebuilding the core product interface",
-          "Introduced TypeScript reducing bugs by 25%"
-        ],
-        "technologies": ["React", "Node.js", "TypeScript", "AWS"]
-      },
-      {
-        "jobTitle": "Full Stack Developer",
-        "company": "Innovation Labs",
-        "location": "Remote",
-        "period": "2020 - 2022",
+        "id" : 1,
+        "jobTitle": "Backend developer",
+        "company": "Escodeve",
+        "location": "",
+        "period": "2025",
         "description": "Developed and maintained multiple web applications for enterprise clients.",
         "achievements": [
           "Built a real-time analytics dashboard used by 50K+ users",

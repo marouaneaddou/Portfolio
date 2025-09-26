@@ -1,14 +1,21 @@
 
-import { Download , Mail , MapPin , Github, Linkedin, Wind, Trophy, Code2, ExternalLink, Award,} from "lucide-react"
-import { Link } from "react-router-dom"
-import bg from "../assets/bg.avif"
-import profile from "../assets/profile.png"
+import { Download , 
+    Mail , 
+    MapPin, 
+    Trophy, 
+    Code2, 
+    ExternalLink, 
+    Award,}             from "lucide-react"
+import { Link }         from "react-router-dom"
+import bg               from "../assets/bg.avif"
+import profile          from "../assets/profile.png"
+import {platformSocialicons} from  "../utils"
+import portfolioData    from "../config.json"
+import { achievement }  from "../types"
 
-import portfolioData            from "../config.json"
-import { achievement } from "../types"
-
-const { achievements } = portfolioData
-
+const { achievements , 
+    social ,
+    personal } = portfolioData
 const HomePage = () => {
     return (
         <>
@@ -24,11 +31,11 @@ const HomePage = () => {
                         <img className="w-36 ml-5 mt-[-4.5rem]" src={ profile } alt="" />
                     </div>
                     <div className=" mr-5 ml-5" style={{ gridArea: 'second' }}>
-                        <h1 className="text-white font-bold text-xl mb-2">Marouane Addou</h1>
-                        <p className=" text-orange-yellow text-xl">Software Developer</p>
+                        <h1 className="text-white font-bold text-xl mb-2">{personal.name}</h1>
+                        <p className=" text-orange-yellow text-xl">{personal.title}</p>
                         <span className="flex justify-between text-white/70 w-[264px] mt-5 md:mb-0 mb-4">
                             <MapPin />
-                            Oujda, Oriental Region, Morocco
+                            {personal.location}
                         </span>
                     </div>
                     <div className="flex mr-5 ml-5 md:justify-end" style={{ gridArea: 'third' }}>
@@ -43,9 +50,7 @@ const HomePage = () => {
                     </div>
                     <div className="text-white/80 mt-4  mb-5" style={{ gridArea: 'Fourth' }}>
                         <div className="mr-5 ml-5 mb-5 text-lg">
-                            Dedicated computer science student with a strong foundation in software development and a 
-                            passion for learning. Experienced in working with JavaScript, React, and C++, 
-                            currently focused on building innovative solutions and enhancing problem solving skills through hands-on projects
+                            {personal.bio}
                         </div>
                         <span className="border border-white/10 w-full inline-block"></span>
                     </div>
@@ -73,15 +78,15 @@ const HomePage = () => {
                                     Competitive Programming
                                 </h1>
                                 <div className=" flex gap-2 items-center justify-between mb-4">
-                                    <p className="flex gap-4">
+                                    <div className="flex gap-4">
                                         <span className="text-orange-600 bg-orange-yellow w-fit rounded-md p-3 inline-block">
                                             <Code2 className="w-6 h-6"/> 
                                         </span>
-                                        <div className="text-white">
+                                        <span className="text-white">
                                             <p className="font-bold text-lg">LeetCode</p>
-                                            <span className="text-white/50 text-sm">@m-addou</span>
-                                        </div>
-                                    </p>
+                                            <span className="text-white/50 text-sm">m-addou</span>
+                                        </span>
+                                    </div>
                                     <a href="https://leetcode.com/u/m-addou/"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -126,11 +131,6 @@ const HomePage = () => {
                                                     <span className="">
                                                         {arch.name}
                                                     </span>
-                                                    {/* <a href={arch.link} 
-                                                        target="_blank"
-                                                       rel="noopener noreferrer" className=" ">
-                                                        <ExternalLink className="w-4 h-4 text-white/80 group-hover:text-orange-yellow" />
-                                                    </a> */}
                                                 </p>
 
                                     ))}
@@ -140,22 +140,23 @@ const HomePage = () => {
                     </div>
                     <div className=" flex p-5 bg-white/5 mt-5 border-t border-white/10 " style={{gridArea: 'eighth'}}>
                         <div className="grid  grid-cols-1 gap-4
-                    md:grid-cols-3 
-                    [grid-template-areas:'first''second''third']
-                    md:[grid-template-areas:'first_second_third'] w-full
+                        md:grid-cols-3 w-full
                     ">
-                        <Link to="/" className="text-white  flex p-4 border border-white/10 bg-white/5 rounded-md " style={{ gridArea: 'first' }}>
-                            <Github className="mr-2"/>
-                            <span> Github <span className="ml-2"> &gt; </span> </span>
-                        </Link>
-                        <Link to="/" className="text-white flex  p-4 border border-white/10 bg-white/5 rounded-md" style={{ gridArea: 'second' }}>
-                            <Linkedin className="mr-2"/>
-                            <span> Linkedin<span className="ml-2"> &gt; </span> </span>
-                        </Link>
-                        <Link to="/" className="text-white flex  p-4 border border-white/10 bg-white/5 rounded-md" style={{ gridArea: 'third' }}>
-                            <Mail className="mr-2"/>
-                            <span> Email <span className="ml-2"> &gt; </span>  </span>
-                        </Link>
+                        {
+                            social.map( ( s , idx ) => {
+                                const Icon = platformSocialicons[idx];
+
+                               return  <Link key={idx} to={s.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-white  flex p-4 border border-white/10 bg-white/5 rounded-md " 
+                                        >
+                                    <Icon className="mr-2 text-white"/>
+                                    <span> {s.platform} <span className="ml-2"> &gt; </span> </span>
+                                </Link>
+                            }
+                            )
+                        }
                         </div>
                     </div>
                 </div>
