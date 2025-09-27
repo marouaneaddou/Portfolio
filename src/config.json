@@ -248,6 +248,24 @@
       }
     ],
     "education": [
+        {
+          "degree": "Architect of Digital Technologies",
+          "school": "1337 Coding School",
+          "location": "Tétouan",
+          "period": "2022 - Present"
+        },
+        {
+          "degree": "Specialized Technician Diploma Electromechanics of Automated Systems",
+          "school": "OFPPT / Specialized Institute of Applied Technology (ISTA)",
+          "location": "Oujda",
+          "period": "2019 – 2021"
+        },
+        {
+          "degree": "High School Diploma – Physical Sciences",
+          "school": "Lycée El Fath",
+          "location": "Jerada",
+          "period": "2019"
+        }
     ],
     "certificate" : [
       {
