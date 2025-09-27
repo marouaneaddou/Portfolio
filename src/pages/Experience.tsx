@@ -12,7 +12,7 @@ const ExperincePage = ( ) => {
                 <Building2 />
                 <span className=" text-3xl">Professional Experience</span>
             </h1>
-            <div className="border border-white/10 bg-white/5 backdrop-blur-[10px] p-8 rounded-md ">
+            <div className="border border-white/5 bg-white/5 backdrop-blur-[10px] p-8 rounded-md ">
                 {experience.map((expe) => (
                     <div className="text-white" key={expe.id} >
                         <h2 className="text-white font-bold mb-3">{expe.jobTitle}</h2>
