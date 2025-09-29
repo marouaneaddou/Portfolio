@@ -38,7 +38,7 @@ const HomePage = () => {
                             {personal.location}
                         </span>
                     </div>
-                    <div className="flex mr-5 ml-5 md:justify-end" style={{ gridArea: 'third' }}>
+                    <div className="flex mr-5 ml-5  md:justify-end" style={{ gridArea: 'third' }}>
                             <Link to="" className="w-30 mr-2 h-10 bg-orange-yellow flex justify-between p-3 border w-26  border-white/10 rounded-md items-center">
                                 <Download className="w-4 mr-1"/>
                                 <span>Resume</span>
@@ -54,24 +54,24 @@ const HomePage = () => {
                         </div>
                         <span className="border border-white/10 w-full inline-block"></span>
                     </div>
-                    <div className="mb-5 mr-2 ml-5 p-6 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Fifth' }}>
+                    <div className="mb-5 md:mr-5 md:ml-5 p-6 border border-white/10 md:rounded-md  bg-white/5" style={{ gridArea: 'Fifth' }}>
                         <Link to="/About" className="  ">
                             <h1 className="text-white font-bold mb-2">About me</h1>
                             <p className="text-white/70 mb-2">Learn more about my journey, skils, and experience.</p>
                             <p className=" text-orange-yellow ">View Details &gt; </p>
                         </Link>
                     </div>
-                    <div className="mb-5 p-6 ml-2 mr-5 border border-white/10 rounded-md  bg-white/5" style={{ gridArea: 'Sixth' }}>
+                    <div className="mb-5 p-6 md:ml-2 md:mr-5 border border-white/10 md:rounded-md  bg-white/5" style={{ gridArea: 'Sixth' }}>
                         <Link to="/Challenges" className="">
                             <h1 className="text-white font-bold mb-2">Coding Challenge</h1>
                             <p className="text-white/70 mb-2">Check out my solutions to varous programming problems</p>
                             <p className=" text-orange-yellow ">View Details  &gt; </p>
                         </Link>
                     </div>
-                    <div className="pt-6 border-t-2 border-white/10 mr-5 ml-5 grid grid-cols-1 md:grid-cols-3 gap-6" style={{gridArea: 'Seventh'}}>
+                    <div className="border-white/10 border-t-2 pt-5 md:p-5 grid grid-cols-1 md:grid-cols-3 md:gap-6" style={{gridArea: 'Seventh'}}>
                         {/* <div className="grid md:grid-cols-2 ml-5 mr-5 w-full"
                         > */}
-                            <div className=" col-span-2 border border-white/10 bg-white/5 rounded-md p-6 ">
+                            <div className=" col-span-2 border border-white/10 bg-white/5 md:rounded-md p-6">
                                 <h1 className="text-white font-bold flex gap-2 mb-6" >
                                     <Trophy className="w-6 h-6"/>
                                     Competitive Programming
@@ -99,7 +99,7 @@ const HomePage = () => {
                                     Total Solved
                                     <span className="text-orange-yellow"> 300+</span>
                                 </p>
-                                <div className="flex flex-wrap justify-between mb-4 ">
+                                <div className="flex flex-wrap md:justify-between mb-4  gap-2 justify-center">
                                     <span className="bg-green-400/10 text-center py-3 rounded-md text-white/70 w-[155px]"> 
                                         <span className=" block text-green-400">130+</span>
                                         easy
@@ -118,7 +118,7 @@ const HomePage = () => {
                                     <span className="text-orange-yellow"> #308,674</span>
                                 </p>
                             </div>
-                            <div className=" col-span-1 border border-white/10 bg-white/5 rounded-md p-6 ">
+                            <div className=" col-span-1 border border-white/10 bg-white/5 md:rounded-md p-6 mt-6 md:mt-0">
                                 <h1 className="text-white font-bold flex gap-2 mb-6" >
                                     <Award className="w-6 h-6"/>
                                     Recent Achievements
