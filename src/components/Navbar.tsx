@@ -4,7 +4,7 @@ import { Home,
     BookOpen, 
     FileCode, 
     GraduationCap,
-    Terminal
+    Terminal,
 } from "lucide-react";
 
 import { NavLink } from "react-router-dom"
@@ -26,11 +26,11 @@ const NavbarItems : item[] = [
 
 
 
-const Navbar = () => {
+const Navbar = ( props : { menuIsOpen : boolean , setOpenMenu : ( b : boolean) => void} ) => {
     return (
         <>
             <nav className="">
-                <ul className="text-white flex gap-2 justify-between text-xl items-center h-[60px]">
+                <ul className="hidden text-white xl:flex gap-2 justify-between text-xl items-center">
                 {NavbarItems.map(({ path, icon:Icon, label }) => (
                     <li key={path} className="flex items-center text-sm text-white/70 hover:text-white justify-center">
                         <NavLink to={path} className="flex gap-1 text-[15px] py-2 px-4
@@ -41,7 +41,21 @@ const Navbar = () => {
                     </li>
                     ))}
                 </ul>
-            </nav>
+                {
+                    props.menuIsOpen && <ul className="text-white flex-col pt-10 h-full bg-black">
+                    {NavbarItems.map(({ path, icon:Icon, label }) => (
+                        <li key={path} className=" ">
+                            <NavLink to={path} onClick={( ) => props.setOpenMenu(false)} className="flex gap-1 text-[15px] 
+                                py-4 px-6 w-full items-center hover:text-white text-white/70 text-sm
+                                    hover:bg-white/5 rounded-md" >
+                                <Icon className="mr-1 w-5"/>
+                                <span>{label}</span>
+                            </NavLink>
+                        </li>
+                        ))}
+                    </ul>
+                }
+            </nav> 
         </>
     )
 }
