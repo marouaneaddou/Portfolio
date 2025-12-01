@@ -1,10 +1,10 @@
-import { Project}                from "../types"
+import { Project}               from "../types"
 import portfolioData            from '../config.json'
 import Card                     from "../components/Card";
 import { useState }             from "react";
 import Button                   from "../components/Button";
-import {Code2  } from "lucide-react";
-import Details from "../components/Details";
+import { Code2  }                from "lucide-react";
+import Details                  from "../components/Details";
 
 const { projects } = portfolioData
 const ProjectPage = () => {
