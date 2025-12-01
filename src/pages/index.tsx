@@ -8,7 +8,6 @@ import { Download ,
     Award,}             from "lucide-react"
 import { Link }         from "react-router-dom"
 import bg               from "../assets/bg.avif"
-import profile          from "../assets/profile.png"
 import {platformSocialicons} from  "../utils"
 import portfolioData    from "../config.json"
 import { achievement }  from "../types"
@@ -28,7 +27,7 @@ const HomePage = () => {
                     
                     <div className="" style={{gridArea: 'first'}}>
                         <img className="object-cover h-[12.75rem] w-full md:w-full" src={bg} alt="" />
-                        <img className="w-36 ml-5 mt-[-4.5rem]" src={ profile } alt="" />
+                        <img className="w-36 ml-5 mt-[-4.5rem]" src={ portfolioData.personal.profile } alt="" />
                     </div>
                     <div className=" mr-5 ml-5" style={{ gridArea: 'second' }}>
                         <h1 className="text-white font-bold text-xl mb-2">{personal.name}</h1>

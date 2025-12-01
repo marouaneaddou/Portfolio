@@ -12,7 +12,7 @@ const EducationPage = () => {
             </h1>
             <div className=" grid gap-4">
                 {education.map((edu , idx) => (
-                    <div key={idx} className=" p-8 bg-white/5 backdrop-blur-[10px] rounded-xl border border-white/5 text-white">
+                    <div key={idx} className=" p-8 bg-white/5 rounded-xl border border-white/5 text-white">
                         <div className="flex justify-between mb-4">
                             <h2 className="">{edu.degree}</h2>
                             <p className=""> {edu.location}</p>

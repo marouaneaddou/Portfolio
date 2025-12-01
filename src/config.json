@@ -38,6 +38,7 @@
       "bio": "I’m a software developer who works with C/C++, Python, and JavaScript to build useful and practical solutions. I enjoy solving problems, taking on new challenges, and improving my skills by building real projects",
       "email": "marouaneaddou@hotmail.com",
       "resumeUrl": "/resume.pdf",
+      "profile" : "/src/assets/profile.png",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
       "coverImage": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1920&auto=format&fit=crop&q=80"
     },
